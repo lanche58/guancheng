@@ -133,3 +133,13 @@
         max-width: 100%;
     }
 }
+
+.edu-cap{
+    @include c(64px);
+    background: $white;
+    border: 4px solid $mc2;
+    line-height: 64px - 8px;
+    text-align: center;
+    color: $mc1;
+    font-size: 32px;
+}
