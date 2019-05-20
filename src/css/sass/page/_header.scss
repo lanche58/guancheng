@@ -12,7 +12,7 @@
             > a{
                 display: block;
                 padding: (64px - 24px) / 2 (48px / 2);
-                color: $fc4;
+                color: $fc2;
                 &.act{
                     color: $mc2;
                 }
@@ -78,18 +78,28 @@
             display: none;
         }
         .menu-handler{
+            transition: background 300ms;
             display: block;
             .burger{
-                background: $fc4;
+                background: $fc2;
+            }
+            &.active{
+                background: $mc1;
+                .burger{
+                    background: $white;
+                }
             }
         }
     }
 }
 
 .menuBox{
-    left: 60px;
+    width: 320px;
+    right: -320px;
     text-align: center;
+    display: none;
     .ma{
+        margin-top: 52px - 17px;
         > img{
             vertical-align: bottom;
             width: 88px;
@@ -98,9 +108,57 @@
         }
     }
     .oa{
-
+        display: block;
+        margin-top: 20px;
+        background: $hc2;
+        line-height: 56px;
+        font-weight: bold;
     }
     .navMobile{
-        
+        padding-top: 30px;
+        a{
+            display: block;
+            line-height: 1.4;
+        }
+        dd{
+            > a{
+                font-size: 14px;
+                padding: (47px - 19px) / 2 5%;
+                &.act{
+                    background: $mc1;
+                    color: $white;
+                }
+            }
+        }
+        .mtv{
+            padding: 8px 0;
+            background: $hc3;
+            display: none;
+            a{
+                padding: 4px 5%;
+                font-size: 12px;
+            }
+        }
+    }
+    @media screen and (max-width:481px) {
+        width: 220px;
+        right: -220px;
+        .navMobile{
+            padding-top: 35px;
+            dd > a{
+                padding-top: (39px - 19px) / 2;
+                padding-bottom: (39px - 19px) / 2;
+            }
+        }
+        .ma{
+            margin-top: 25px;
+        }
+    }
+}
+
+.mtop{
+    height: 64px;
+    @media screen and (max-width:1024px) {
+        height: 60px;
     }
 }

@@ -1,0 +1,237 @@
+.footer{
+    position: relative;
+    background: $white;
+    border-top: 1px solid $hc3;
+    .fb{
+        background: $hc3;
+        padding: 30px 55px 45px;
+    }
+    .f-link, .f-cta{
+        float: left;
+    }
+    .r .wrap, .f-ma{
+        float: right;
+    }
+    .l{
+        padding-top: 15px;
+        line-height: 24px;
+    }
+    .f-link{
+        margin-left: 70px;
+    }
+    .f-ma{
+        margin-left: 25px;
+    }
+    .r{
+        font-size: 12px;
+        .wrap{
+            padding-top: 13px;
+            text-align: right;
+        }
+    }
+    .f-cop span, .oa{
+        display: block;
+    }
+    .f-cop a{
+        margin-left: 10px;
+    }
+    .f-nav{
+        padding: 35px 0 30px;
+    }
+    a{
+        @media screen and (min-width:1025px) {
+            &:not(.na):hover{
+                color: $mc1;
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .f-nav{
+            display: none;
+        }
+        .fb{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .f-link{
+            margin-left: 40px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .f-link, .f-cta, .r, .l{
+            float: none;
+        }
+        .f-link{
+            margin-left: 0;
+        }
+        .l{
+            padding-top: 0;
+        }
+        .r{
+            overflow: hidden;
+            padding-top: 10px;
+            .wrap{
+                float: none;
+                overflow: hidden;
+                text-align: left;
+            }
+        }
+        .f-ma{
+            float: left;
+            margin: 0 25px 0 0;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .f-ma{
+            display: none;
+        }
+        .f-cop span, .f-cop{
+            margin-top: 5px;
+        }
+    }
+}
+
+.f-nav{
+    li{
+        width: 14.28%;
+        float: left;
+    }
+    a{
+        display: block;
+        padding: 6px 5px;
+        line-height: 1.4;
+        text-align: center;
+        &:first-child{
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+    }
+}
+
+.f-link, .f-cta{
+    p{
+        margin-bottom: 10px;
+    }
+    .icon{
+        @include di;
+        margin-right: 10px;
+        font-size: 14px;
+        color: $mc1;
+    }
+}
+
+.f-ma{
+    width: 88px;
+    img{
+        width: 100%;
+        vertical-align: bottom;
+    }
+}
+
+#top{
+    position: absolute;
+    z-index: 599;
+    top: 0;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: $hc4;
+    color: $mc1;
+    line-height: 40px;
+    text-align: center;
+    font-size: 26px;
+    @media screen and (min-width:1025px) {
+        &:hover{
+            background: $mc1;
+            color: $white;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        right: 0;
+    }
+    @media screen and (max-width:1024px) {
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+        top: auto;
+    }
+}
+
+.f-link{
+    position: relative;
+    > p{
+        position: relative;
+        @include di;
+        cursor: pointer;
+        @include mt3;
+        &:before{
+            @include ba;
+            left: 50%;
+            margin-bottom: 20px - 12px;
+            bottom: 100%;
+            z-index: 399;
+            margin-left: -13px;
+            width: 0;
+            height: 0;
+            border-left: 13px solid transparent;
+            border-right: 13px solid transparent;
+            border-top: 12px solid;
+            color: $white;
+            @include hide;
+            transform: translateY(-20px);
+            @include mt3;
+        }
+    }
+    .link-wrap{
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        z-index: 299;
+        margin-left: -(284px / 2);
+        width: 284px;
+        padding-bottom: 20px;
+        @include hide;
+        transform: translateY(-20px);
+        @include mt3;
+        .b{
+            background: $white;
+            padding: 20px 28px;
+            max-height: 320px + 40px;
+            @include sy;
+            box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+            font-size: 14px;
+        }
+        a{
+            display: block;
+            line-height: 32px;
+        }
+    }
+    &.act{
+        > p{
+            color: $mc1;
+
+        }
+        > p:before, .link-wrap{
+            transform: none;
+            @include show;
+        }
+    }
+    @media screen and (min-width:1025px) {
+        &:hover{
+            > p{
+                color: $mc1;
+            }
+        }
+    }
+    @media screen and (max-width:861px) {
+        .link-wrap{
+            left: 0;
+            margin-left: 0;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .link-wrap{
+            width: 100%;
+        }
+    }
+}

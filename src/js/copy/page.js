@@ -72,70 +72,70 @@ $(function () {
 
 
     // 友情链接
-    // var isopen = 0;
-    // $('.friendship-link').bind(_click, function(){
-    //     if(isopen==0){
-    //         isopen = 1;
-    //         $(this).addClass('act');
-    //         $('.friendship-link .k').stop().slideDown(300);
-    //     }else{
-    //         isopen = 0;
-    //         $(this).removeClass('act');
-    //         $('.friendship-link .k').stop().slideUp(300);
-    //     }
-    // });
-    // $('.friendship-link').mouseleave(function(){
-    //     isopen = 0;
-    //     $('.friendship-link').removeClass('act');
-    //     $('.friendship-link .k').stop().slideUp(300);
-    // });
+    var isopen = 0;
+    $('.f-link').bind(_click, function(){
+        if(isopen===0){
+            isopen = 1;
+            $(this).addClass('act');
+            // $('.f-link .link-wrap').stop().slideDown(300);
+        }else{
+            isopen = 0;
+            $(this).removeClass('act');
+            // $('.f-link .link-wrap').stop().slideUp(300);
+        }
+    });
+    $('.f-link').mouseleave(function(){
+        isopen = 0;
+        $('.f-link').removeClass('act');
+        // $('.f-link .link-wrap').stop().slideUp(300);
+    });
 
 
 
 
 	// 手机导航
-	// $('.navMobile dd > a').bind(_click, function (e) {
-	// 	if($(this).next('.mtv').size() >= 1){
-	// 		if(!$(this).hasClass('act')){
-	// 			e.preventDefault();
-	// 			$('.navMobile dd > a').removeClass('act');
-	// 			$('.mtv').stop().slideUp(300);
-	// 			$(this).addClass('act');
-	// 			$(this).next('.mtv').stop().slideDown(300);
-	// 		}else{
-	// 			$(this).removeClass('act');
-	// 			$(this).next('.mtv').stop().slideUp(300);
-	// 		}
-	// 	}
-	// });
-	// $menuBtn.bind(_click, function () {
- //        var w = $menuBox.width();
- //        if (navItem == 0) {
- //            $('html').addClass('open');
- //            $('.menuBlack').stop().fadeIn(600);
- //            $(this).addClass('active');
- //            $menuBox.show().stop(false,false).animate({right:0});
- //            navItem = 1;
- //        } else {
- //            $('html').removeClass('open');
- //            $('.menuBlack').stop().fadeOut(600);
- //            $(this).removeClass('active').stop(false,false).animate({right:0});
- //            $menuBox.stop(false,false).animate({right:-w+"px"},function(){
- //                $(this).hide();
- //            });
- //            navItem = 0;
- //        };
- //    });
- //    $('.menuBlack').bind(_click, function () {
- //        var w = $menuBox.width();
- //        $('html').removeClass('open');
- //        $menuBtn.removeClass('active');
- //        $('.menuBlack').stop().fadeOut(600);
- //        $menuBox.stop(false,false).animate({right:-w+"px"},function(){
- //            $(this).hide();
- //        });
- //        navItem = 0;
- //    });
+	$('.navMobile dd > a').bind(_click, function (e) {
+		if($(this).next('.mtv').size() >= 1){
+			if(!$(this).hasClass('act')){
+				e.preventDefault();
+				$('.navMobile dd > a').removeClass('act');
+				$('.mtv').stop().slideUp(300);
+				$(this).addClass('act');
+				$(this).next('.mtv').stop().slideDown(300);
+			}else{
+				$(this).removeClass('act');
+				$(this).next('.mtv').stop().slideUp(300);
+			}
+		}
+	});
+	$menuBtn.bind(_click, function () {
+        var w = $menuBox.width();
+        if (navItem == 0) {
+            $('html').addClass('open');
+            $('.menuBlack').stop().fadeIn(600);
+            $(this).addClass('active').stop(false,false).animate({right:w+'px'});
+            $menuBox.show().stop(false,false).animate({right:0});
+            navItem = 1;
+        } else {
+            $('html').removeClass('open');
+            $('.menuBlack').stop().fadeOut(600);
+            $(this).removeClass('active').stop(false,false).animate({right:0});
+            $menuBox.stop(false,false).animate({right:-w+"px"},function(){
+                $(this).hide();
+            });
+            navItem = 0;
+        };
+    });
+    $('.menuBlack').bind(_click, function () {
+        var w = $menuBox.width();
+        $('html').removeClass('open');
+        $menuBtn.removeClass('active').stop(false,false).animate({right:0});
+        $('.menuBlack').stop().fadeOut(600);
+        $menuBox.stop(false,false).animate({right:-w+"px"},function(){
+            $(this).hide();
+        });
+        navItem = 0;
+    });
 	
 	
 	// pbanner animation

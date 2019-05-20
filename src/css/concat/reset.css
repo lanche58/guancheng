@@ -5,7 +5,7 @@ button,
 input,
 select,
 textarea {
-    font: 16px/1.8 arial, "times new roman", tahoma, "Microsoft Yahei", "微软雅黑", "Microsoft JhengHei", "微软正黑体", sans-serif;
+    font: 16px/1.8 "times new roman", arial, tahoma, "Microsoft Yahei", "微软雅黑", "Microsoft JhengHei", "微软正黑体", sans-serif;
     color: #666;
 }
 h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal; }
