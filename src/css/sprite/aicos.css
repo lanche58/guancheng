@@ -1,0 +1,114 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-1 {
+  background-image: url(aicos.png);
+  background-position: -238px -68px;
+  width: 32px;
+  height: 64px;
+}
+.icon-10 {
+  background-image: url(aicos.png);
+  background-position: -206px 0px;
+  width: 68px;
+  height: 68px;
+}
+.icon-11 {
+  background-image: url(aicos.png);
+  background-position: 0px 0px;
+  width: 138px;
+  height: 92px;
+}
+.icon-12 {
+  background-image: url(aicos.png);
+  background-position: 0px -92px;
+  width: 68px;
+  height: 136px;
+}
+.icon-13 {
+  background-image: url(aicos.png);
+  background-position: -68px -92px;
+  width: 68px;
+  height: 136px;
+}
+.icon-14 {
+  background-image: url(aicos.png);
+  background-position: -138px 0px;
+  width: 68px;
+  height: 136px;
+}
+.icon-15 {
+  background-image: url(aicos.png);
+  background-position: -162px -204px;
+  width: 24px;
+  height: 24px;
+}
+.icon-16 {
+  background-image: url(aicos.png);
+  background-position: -138px -204px;
+  width: 24px;
+  height: 24px;
+}
+.icon-2 {
+  background-image: url(aicos.png);
+  background-position: -206px -132px;
+  width: 32px;
+  height: 64px;
+}
+.icon-3 {
+  background-image: url(aicos.png);
+  background-position: -206px -68px;
+  width: 32px;
+  height: 64px;
+}
+.icon-4 {
+  background-image: url(aicos.png);
+  background-position: -265px -132px;
+  width: 8px;
+  height: 12px;
+}
+.icon-5 {
+  background-image: url(aicos.png);
+  background-position: -238px -132px;
+  width: 27px;
+  height: 27px;
+}
+.icon-6 {
+  background-image: url(aicos.png);
+  background-position: -206px -196px;
+  width: 42px;
+  height: 15px;
+}
+.icon-7 {
+  background-image: url(aicos.png);
+  background-position: -248px -196px;
+  width: 12px;
+  height: 12px;
+}
+.icon-8 {
+  background-image: url(aicos.png);
+  background-position: -238px -159px;
+  width: 27px;
+  height: 27px;
+}
+.icon-9 {
+  background-image: url(aicos.png);
+  background-position: -138px -136px;
+  width: 68px;
+  height: 68px;
+}

@@ -1,0 +1,40 @@
+*,*:before,*:after{ outline: none; box-sizing: border-box; }
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {margin: 0; padding: 0; }
+body,
+button,
+input,
+select,
+textarea {
+    font: 16px/1.8 arial, "times new roman", tahoma, "Microsoft Yahei", "微软雅黑", "Microsoft JhengHei", "微软正黑体", sans-serif;
+    color: #666;
+}
+h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal; }
+b, cite, code, em, i, small, th {font-style: normal; }
+ol, ul {list-style: none; }
+a {text-decoration: none; -webkit-transition: 300ms; transition: 300ms; cursor: pointer; }
+fieldset, iframe, img {border: 0; }
+button, input, select, textarea {font-size: 100%; border-radius: 0; appearance: none; -moz-appearance: none; -webkit-appearance: none; border: none; background: none; outline: none; }
+table {border-collapse: collapse; border-spacing: 0; }
+th {text-align: inherit }
+button, input[type=button], input[type=submit] {cursor: pointer }
+button::-moz-focus-inner,
+button::-moz-focus-outer,
+input::-moz-focus-inner,
+input::-moz-focus-outer {border: 0 none; padding: 0; margin: 0 }
+input[type=search] {-webkit-appearance: textfield }
+input:focus::-webkit-input-placeholder {color: transparent }
+input::-ms-clear {display: none }
+textarea {resize: vertical; overflow-y: auto }
+::-moz-selection {background: #d76c00; color: #fff; text-shadow: none; }
+::selection {background: #d76c00; color: #fff; text-shadow: none; }
+a:link, a:visited {text-decoration: none; }
+a:active, a:hover {text-decoration: none; }
+.clearfix:before, .clearfix:after {display: table; content: ""; line-height: 0px; }
+.clearfix:after {clear: both; }
+@media screen and (max-width:1366px) {
+    body,
+    button,
+    input,
+    select,
+    textarea{ font-size: 14px; }  
+}

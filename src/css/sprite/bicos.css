@@ -1,0 +1,108 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-1 {
+  background-image: url(bicos.png);
+  background-position: 0px 0px;
+  width: 52px;
+  height: 52px;
+}
+.icon-10 {
+  background-image: url(bicos.png);
+  background-position: 0px -84px;
+  width: 27px;
+  height: 27px;
+}
+.icon-11 {
+  background-image: url(bicos.png);
+  background-position: -84px -32px;
+  width: 27px;
+  height: 27px;
+}
+.icon-12 {
+  background-image: url(bicos.png);
+  background-position: -52px 0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-13 {
+  background-image: url(bicos.png);
+  background-position: 0px -52px;
+  width: 32px;
+  height: 32px;
+}
+.icon-14 {
+  background-image: url(bicos.png);
+  background-position: -32px -52px;
+  width: 32px;
+  height: 32px;
+}
+.icon-15 {
+  background-image: url(bicos.png);
+  background-position: -84px 0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-2 {
+  background-image: url(bicos.png);
+  background-position: -79px -84px;
+  width: 26px;
+  height: 26px;
+}
+.icon-3 {
+  background-image: url(bicos.png);
+  background-position: -116px -75px;
+  width: 8px;
+  height: 6px;
+}
+.icon-4 {
+  background-image: url(bicos.png);
+  background-position: -53px -84px;
+  width: 26px;
+  height: 27px;
+}
+.icon-5 {
+  background-image: url(bicos.png);
+  background-position: -27px -84px;
+  width: 26px;
+  height: 27px;
+}
+.icon-6 {
+  background-image: url(bicos.png);
+  background-position: -84px -59px;
+  width: 23px;
+  height: 25px;
+}
+.icon-7 {
+  background-image: url(bicos.png);
+  background-position: -116px 0px;
+  width: 23px;
+  height: 25px;
+}
+.icon-8 {
+  background-image: url(bicos.png);
+  background-position: -116px -25px;
+  width: 21px;
+  height: 25px;
+}
+.icon-9 {
+  background-image: url(bicos.png);
+  background-position: -116px -50px;
+  width: 21px;
+  height: 25px;
+}

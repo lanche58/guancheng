@@ -1,0 +1,106 @@
+.header{
+    height: 64px;
+    line-height: 24px;
+    .logo{
+        position: absolute;
+        width: 160px;
+        top: (64px - 46px) / 2;
+        left: 20px;
+    }
+    .nav{
+        li{
+            > a{
+                display: block;
+                padding: (64px - 24px) / 2 (48px / 2);
+                color: $fc4;
+                &.act{
+                    color: $mc2;
+                }
+                @media screen and (min-width:1025px) {
+                    &:hover{
+                        color: $mc2;
+                    }
+                }
+            }
+        }
+    }
+    .h-link{
+        position: absolute;
+        top: 0;
+        right: 20px;
+        a{
+            float: left;
+            font-size: 14px;
+            padding: (64px - 24px) / 2 0;
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    color: $mc2;
+                }
+            }
+        }
+        .oa{
+            font-weight: bold;
+        }
+        .icon-erweima{
+            margin-left: 44px;
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .nav li>a{
+            padding-left: 19px;
+            padding-right: 19px;
+        }
+        .h-link{
+            .icon-erweima{
+                margin-left: 35px;
+            }
+        }
+    }
+    @media screen and (max-width:1201px) {
+        .nav li>a{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .h-link{
+            .icon-erweima{
+                margin-left: 25px;
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        height: 60px;
+        .logo{
+            left: 5%;
+            top: (60px - 46px) / 2;
+        }
+        .h-link, .nav{
+            display: none;
+        }
+        .menu-handler{
+            display: block;
+            .burger{
+                background: $fc4;
+            }
+        }
+    }
+}
+
+.menuBox{
+    left: 60px;
+    text-align: center;
+    .ma{
+        > img{
+            vertical-align: bottom;
+            width: 88px;
+            max-width: 90%;
+            border: 1px solid $bc1;
+        }
+    }
+    .oa{
+
+    }
+    .navMobile{
+        
+    }
+}

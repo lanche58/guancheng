@@ -1,0 +1,106 @@
+@charset "utf-8";
+@mixin ba{
+	content: "";
+	position: absolute;
+}
+@mixin c($w){
+    width: $w;
+    height: $w;
+    border-radius: 100%;
+}
+@mixin hide{
+	opacity: 0;
+	visibility: hidden;
+}
+@mixin show{
+	opacity: 1;
+	visibility: visible;
+}
+@mixin mt3{
+	transition: 300ms;
+}
+@mixin mt4{
+	transition: 400ms;
+}
+@mixin mt6{
+	transition: 600ms;
+}
+@mixin plr{
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+@mixin tblr{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+@mixin hl($c,$h){
+	@include ba;
+	left: auto;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: $h;
+	background: $c;
+	@include mt6;
+}
+@mixin hlw{
+	left: 0;
+	right: auto;
+	width: 100%;
+}
+@mixin hv($c,$w){
+	@include ba;
+	top: auto;
+	bottom: 0;
+	right: 0;
+	width: $w;
+	height: 0;
+	background: $c;
+	@include mt4;
+}
+@mixin hvh{
+	top: 0;
+	bottom: auto;
+	height: 100%;
+}
+@mixin sy{
+	overflow: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+@mixin sx{
+	overflow: hidden;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+@mixin now{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+@mixin bg{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@mixin di{
+	display: inline-block;
+	vertical-align: bottom;
+}
+@mixin ofc{
+	object-fit: cover;
+	height: 100%;
+}
+@mixin bs{
+	box-sizing: border-box;
+}
+@mixin df{
+	display: flex;
+	flex-wrap: wrap;
+}
+@mixin b5{
+	background: url(../images/black5.png);
+}

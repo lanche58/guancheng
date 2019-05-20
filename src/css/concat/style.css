@@ -1,0 +1,66 @@
+.header {
+  height: 64px;
+  line-height: 24px; }
+  .header .logo {
+    position: absolute;
+    width: 160px;
+    top: 9px;
+    left: 20px; }
+  .header .nav li > a {
+    display: block;
+    padding: 20px 24px;
+    color: #707070; }
+    .header .nav li > a.act {
+      color: #DAB96B; }
+    @media screen and (min-width: 1025px) {
+      .header .nav li > a:hover {
+        color: #DAB96B; } }
+  .header .h-link {
+    position: absolute;
+    top: 0;
+    right: 20px; }
+    .header .h-link a {
+      float: left;
+      font-size: 14px;
+      padding: 20px 0; }
+      @media screen and (min-width: 1025px) {
+        .header .h-link a:hover {
+          color: #DAB96B; } }
+    .header .h-link .oa {
+      font-weight: bold; }
+    .header .h-link .icon-erweima {
+      margin-left: 44px;
+      font-size: 20px; }
+  @media screen and (max-width: 1366px) {
+    .header .nav li > a {
+      padding-left: 19px;
+      padding-right: 19px; }
+    .header .h-link .icon-erweima {
+      margin-left: 35px; } }
+  @media screen and (max-width: 1201px) {
+    .header .nav li > a {
+      padding-left: 15px;
+      padding-right: 15px; }
+    .header .h-link .icon-erweima {
+      margin-left: 25px; } }
+  @media screen and (max-width: 1024px) {
+    .header {
+      height: 60px; }
+      .header .logo {
+        left: 5%;
+        top: 7px; }
+      .header .h-link, .header .nav {
+        display: none; }
+      .header .menu-handler {
+        display: block; }
+        .header .menu-handler .burger {
+          background: #707070; } }
+
+.menuBox {
+  left: 60px;
+  text-align: center; }
+  .menuBox .ma > img {
+    vertical-align: bottom;
+    width: 88px;
+    max-width: 90%;
+    border: 1px solid #ededed; }
