@@ -1,0 +1,61 @@
+.leader-list{
+    border-top: 1px solid $hc1;
+    .date-wrap{
+        float: left;
+        margin-right: 10px;
+    }
+    .down-wrap{
+        float: right;
+        margin-left: 15px;
+        transform: translateX(-10px);
+        @include hide;
+        @include mt4;
+    }
+    .wrap{
+        display: block;
+        overflow: hidden;
+    }
+    .nowti{
+        line-height: 48px;
+        font-size: 14px;
+        @include mt3;
+    }
+    .icon-angle-right{
+        @include di;
+        margin-right: 10px;
+        color: $mc1;
+        font-size: 12px;
+    }
+    li{
+        padding: 20px 0;
+        border-bottom: 1px solid $hc1;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .down-wrap{
+                    transform: none;
+                    @include show;
+                }
+                .nowti{
+                    color: $mc1;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .down-wrap{
+            transform: none;
+            @include show;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .btn-down{
+            width: 48px;
+            .x{
+                display: none;
+            }
+            .icon{
+                margin: 0;
+            }
+        }
+    }
+}

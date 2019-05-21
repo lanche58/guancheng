@@ -73,6 +73,7 @@
     color: $white;
     line-height: 56px;
     text-align: center;
+    @include mt3;
     .icon{
         @include di;
         margin-left: 10px;
@@ -81,14 +82,34 @@
     @media screen and (min-width:1025px) {
         &:hover{
             background: $mc2;
+            color: $white;
         }
+    }
+    @media screen and (max-width:481px) {
+        .icon{
+            margin-left: 5px;
+        }
+    }
+}
+
+.btn-more-1{
+    background: 140px;
+    height: 48px;
+    background: $hc3;
+    color: $fc2;
+    line-height: 48px;
+    @media screen and (max-width:481px) {
+        width: 118px;
+        height: 38px;
+        line-height: 38px;
     }
 }
 
 .btn-more-hover{
     @media screen and (min-width:1025px) {
-        .btn-more:hover{
+        &:hover .btn-more{
             background: $mc2;
+            color: $white;
         }
     }
 }
@@ -142,4 +163,241 @@
     text-align: center;
     color: $mc1;
     font-size: 32px;
+}
+
+.btn-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -(64px / 2) 0 0 -(64px / 2);
+    @include c(64px);
+    border: 2px solid $white;
+    line-height: 64px - 4px;
+    text-align: center;
+    color: $white;
+    font-size: 20px;
+    @include mt3;
+}
+
+.btn-video-hover{
+    @media screen and (min-width:1025px) {
+        &:hover{
+            .btn-video{
+                background: $mc1;
+                border-color: $mc1;
+            }
+        }
+    }
+}
+
+.dec-en{
+    line-height: 14px;
+    span{
+        @include di;
+        padding: 0 14px - 6px 0 14px;
+        border-left: 1px solid $mc2;
+        border-right: 1px solid $mc2;
+        font-size: 12px;
+        letter-spacing: 6px;
+        color: $mc2;
+    }
+}
+
+.date-wrap{
+    width: 56px;
+    height: 48px;
+    padding: (48px - 30px) / 2 0 0 8px;
+    background: $mc1;
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: bold;
+    color: $white;
+}
+
+.btn-down{
+    width: 86px;
+    height: 48px;
+    border: 1px solid $hc1;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 48px - 2px;
+    text-align: center;
+    .icon{
+        @include di;
+        color: $mc2;
+        margin-right: 8px;
+        @include mt3;
+    }
+    @media screen and (min-width:1025px) {
+        &:hover{
+            background: $mc1;
+            border-color: $mc1;
+            color: $white;
+            .icon{
+                color: $white;
+            }
+        }
+    }
+}
+
+.pager{
+    a{
+        width: 56px;
+        height: 56px;
+        margin: 0 10px;
+        background: $mc1;
+        color: $white;
+        line-height: 56px;
+        font-size: 14px;
+        &.act{
+            background: $mc2;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc2;
+            }
+        }
+        @media screen and (max-width:601px) {
+            margin: 0 3px;
+        }
+        @media screen and (max-width:481px) {
+            margin: 0 1px;
+            width: 44px;
+            height: 46px;
+            line-height: 46px;
+            font-size: 12px;
+        }
+    }
+}
+
+.back-wrap{
+    li{
+        width: 56px;
+    }
+    a{
+        display: block;
+        height: 56px;
+        background: $hc3;
+        text-align: center;
+        font-size: 14px;
+        line-height: 56px;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc2;
+                color: $white;
+            }
+        }
+    }
+    .back-list{
+        margin: 0 auto;
+    }
+    .back-prev{
+        float: left;
+        left: 20px;
+        &.hide{
+            transform: translateX(-20px);
+        }
+    }
+    .back-next{
+        float: right;
+        right: 20px;
+        &.hide{
+            transform: translateX(20px);
+        }
+    }
+    .back-prev, .back-next{
+        position: fixed;
+        z-index: 599;
+        top: 50%;
+        margin-top: -(56px / 2);
+        a{
+            color: $mc1;
+            font-size: 16px;
+        }
+    }
+    .back-arrow{
+        @include mt6;
+        &.hide{
+            @include hide;
+        }
+    }
+}
+
+.pw2{
+    width: 900px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.go-wrap{
+    background: $hc3;
+    padding: 10px 0;
+    font-size: 14px;
+    .pw2{
+        border-left: 1px solid $hc1;
+        padding: 10px 0 10px 25px;
+    }
+    .nowti{
+        display: block;
+        padding: 11px 0;
+        span{
+            color: $fc1;
+            margin-left: 35px;
+            @include mt3;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                span{
+                    color: $mc2;
+                }
+            }
+        }
+    }
+}
+
+.inp{
+    display: block;
+    width: 100%;
+    height: 88px;
+    padding: (88px - 2px - 24px) / 2 24px;
+    border: 1px solid $hc2;
+    background: $hc3;
+    line-height: 24px;
+    color: $fc1;
+    @include mt3;
+    &:focus{
+        border-color: $mc1;
+        background: $white;
+    }
+    @media screen and (max-width:641px) {
+        height: 68px;
+        padding-top: (68px - 2px - 24px) / 2;
+        padding-bottom: (68px - 2px - 24px) / 2;
+    }
+    @media screen and (max-width:481px) {
+        height: 58px;
+        padding: (58px - 2px - 24px) / 2 5%;
+    }
+}
+
+.btn-sub{
+    width: 398px;
+    max-width: 100%;
+    height: 88px;
+    margin: 0 auto;
+    background: $mc2;
+    color: $fc1;
+    @include mt3;
+    @media screen and (min-width:1025px) {
+        &:hover{
+            background: $mc1;
+            color: $white;
+        }
+    }
+    @media screen and (max-width:641px) {
+        height: 68px;
+    }
+    @media screen and (max-width:481px) {
+        height: 58px;
+    }
 }

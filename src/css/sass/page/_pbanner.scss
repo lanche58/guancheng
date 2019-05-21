@@ -1,0 +1,33 @@
+.pbanner{
+    .txts{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 20%;
+        right: 20%;
+        text-align: center;
+    }
+    .pic2{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .itx{
+        vertical-align: bottom;
+        max-width: 100%;
+    }
+    .arrow-scroll{
+        position: absolute;
+        left: 50%;
+        margin-left: -(80px / 2);
+        bottom: 12px;
+    }
+    @media screen and (max-width:1024px) {
+        .arrow-scroll{
+            display: none;
+        }
+        .pic2{
+            position: static;
+        }
+    }
+}

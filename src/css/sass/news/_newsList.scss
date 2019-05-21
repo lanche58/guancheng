@@ -1,0 +1,172 @@
+.news-list{
+    a{
+        display: block;
+        padding: 35px 50px;
+        background: $white;
+        box-shadow: 0px 0px 6px rgba(0,0,0,0.16);
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .ti, .tx{
+                    color: $mc1;
+                }
+            }
+        }
+    }
+    .picbox{
+        float: right;
+        width: 445px;
+        min-width: 56px;
+        min-height: 48px;
+        margin-left: 65px;
+    }
+    .pai{
+        padding-bottom: (251 / 445) * 100%;
+    }
+    .date-wrap{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    li{
+        margin-bottom: 40px;
+    }
+    .ti{
+        height: 30px * 2;
+        font-size: 20px;
+        line-height: 30px;
+        color: $fc1;
+        font-weight: bold;
+        overflow: hidden;
+        @include mt3;
+    }
+    .txts{
+        position: relative;
+        padding-left: 30px;
+        overflow: hidden;
+        .date-wrap{
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 0;
+        }
+    }
+    .icon-angle-right{
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 30px;
+        font-size: 12px;
+        color: $mc1;
+    }
+    .tx{
+        height: 24px * 2;
+        margin-top: 15px;
+        font-size: 14px;
+        @include mt3;
+    }
+    .btn-more{
+        margin-top: 75px;
+    }
+    .item2{
+        .txts{
+            padding-right: 80px;
+        }
+    }
+    .date{
+        display: none;
+    }
+    @media screen and (max-width:1366px) {
+        a{
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+        .picbox{
+            margin-left: 45px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        a{
+            padding: 25px;
+        }
+        .ti{
+            height: auto;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .btn-more{
+            margin-top: 40px;
+        }
+        .txts{
+            margin-top: 10px;
+        }
+        .picbox{
+            width: 356px;
+            margin-left: 35px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        a{
+            padding: 35px 5%;
+        }
+        .pai{
+            display: none;
+        }
+        .picbox{
+            width: auto;
+            margin-left: 80px - 56px;
+        }
+        .txts{
+            margin-top: 0;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            margin-bottom: (40 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .icon-angle-right{
+            display: none;
+        }
+        .txts{
+            padding-left: 0;
+        }
+        .pai{
+            display: block;
+        }
+        .picbox{
+            width: 100%;
+            float: none;
+            margin: 0 0 15px 0;
+        }
+        .ti{
+            font-size: 18px;
+            white-space: normal;
+            line-height: 1.4;
+        }
+        a{
+            padding-top: 5%;
+            padding-bottom: 25px;
+        }
+        .btn-more-1{
+            margin-top: 30px;
+        }
+        .item2{
+            padding-top: 20px;
+            .date-wrap{
+                display: none;
+            }
+            .txts{
+                padding-right: 0;
+            }
+            .date{
+                display: block;
+                margin-bottom: 5px;
+                font-size: 12px;
+                color: $fc3;
+                font-style: italic;
+            }
+        }
+    }
+}
+

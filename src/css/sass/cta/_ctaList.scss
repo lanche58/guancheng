@@ -1,0 +1,88 @@
+.cta-list{
+    border-top: 1px solid $bc1;
+    li{
+        border: 1px solid $bc1;
+        border-top: none;
+        padding: 55px 60px;
+        overflow: hidden;
+        @media screen and (max-width:1024px) {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+    .ma{
+        float: right;
+        margin-left: 40px;
+        width: 148px;
+        border: 1px solid $bc1;
+        img{
+            width: 100%;
+            vertical-align: bottom;
+        }
+    }
+    .wrap{
+        overflow: hidden;
+    }
+    .ti{
+        margin-bottom: 28px;
+        font-size: 26px;
+        font-weight: bold;
+        color: $mc2;
+    }
+    .item{
+        overflow: hidden;
+        line-height: 22px;
+        + .item{
+            margin-top: 18px;
+        }
+        .icon{
+            float: left;
+            width: 30px;
+            color: $mc2;
+        }
+        .name{
+            float: left;
+            width: 45px;
+            line-height: 22px;
+            font-size: 14px;
+            font-weight: bold;
+            color: $fc1;
+        }
+        .text{
+            display: block;
+            overflow: hidden;
+        }
+    }
+    a{
+        @media screen and (min-width:1025px) {
+            &:not(.na):hover{
+                color: $mc2;
+            }
+        }
+    }
+    @media screen and (max-width:641px) {
+        .ma{
+            display: none;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            padding-top: (55 / 600) * 100vw;
+            padding-bottom: (55 / 600) * 100vw;
+        }
+        .item{
+            + .item{
+                margin-top: (18 / 600) * 100vw;
+            }
+        }
+        .ti{
+            font-size: 22px;
+            margin-bottom: (28 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ti{
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.leader-speech-wrap{
+    width: 360px;
+    float: left;
+    margin-right: 35px;
+    .txts{
+        position: relative;
+        margin-top: 10px;
+        height: 120px;
+        padding: 25px 25px 0;
+        background: $hc1;
+        color: $white;
+        overflow: hidden;
+        &:before{
+            @include ba;
+            width: 20px;
+            height: 4px;
+            background: $white;
+            right: 25px;
+            bottom: 20px;
+        }
+    }
+    .en{
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    @media screen and (max-width:1024px) {
+        width: 280px;
+    }
+    @media screen and (max-width:861px) {
+        display: none;
+    }
+    @media screen and (max-width:481px) {
+        display: block;
+        width: 100%;
+        float: none;
+        margin-bottom: 10vw;
+        .txts{
+            padding-left: 5%;
+            padding-right: 5%;
+            &:before{
+                right: 5%;
+            }
+        }
+    }
+}
+
+.sch-r{
+    overflow: hidden;
+    .pager{
+        text-align: left;
+        a{
+            text-align: center;
+            margin: 0;
+            + a{
+                margin-left: 20px;
+            }
+        }
+    }
+    @media screen and (max-width:861px) {
+        .pager{
+            text-align: center;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .pager{
+            a + a{
+                margin-left: 6px;
+            }
+        }
+    }
+    @media screen and (max-width:481px) {
+        .pager{
+            a + a{
+                margin-left: 2px;
+            }
+        }
+    }
+}
+
+.sch1{
+    padding: 80px 0 100px;
+    .leader-list{
+        margin-bottom: 70px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (80 / 600) * 100vw 0 (100 / 600) * 100vw;
+        .leader-list{
+            margin-bottom: (70 / 600) * 100vw;
+        }
+    }
+}
+
+.pw3{
+    width: 810px;
+    margin: 0 auto;
+    max-width: 90%;
+}

@@ -1,0 +1,63 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "news": "act"
+})
+<div class="nwBanner">
+    <div class="pic2"><img src="img/nd_banner.jpg" alt=""></div>
+</div>
+<div class="container">
+    <div class="nw2">
+        <div class="pw2 nd-t">
+            <p class="nd-ti">放大格局 汇聚智慧——冠城教育组织专家组对成都七中实验学校进行教育视导活动</p>
+            <p class="date">时间：2018-12-29</p>
+            <div class="freeTx">
+                <p>“凡事预则立，不预则废”。当前，民办教育新法新政陆续出台，为当下民办教育发展指明了方向，同时也带来新的机遇与挑战。为了快速推进学校提档升级，厚植发展优势，不断提高教育质量与办学品质，沿着新时代优质学校发展的道路阔步迈进。2018年5月30日，冠城集团教育事业部对旗下成都七中实验学校开展了教育视导活动。采取随机推门听课，召开校级班子、中层干部、骨干教师座谈会，对教师、学生、家长进行抽样问卷调查等方式，对学校管理进行诊断，为学校班子进行管理改进提供指导。</p>
+                <br>
+                <p><img src="img/nd_i1.jpg" alt=""></p>
+                <br>
+                <p>本次视导活动邀请了四川省教育科学研究院院长刘涛先生，四川省教育厅中小学教师继续教育首席专家，原成都大学副校长、师范学院院长周小山教授，成都三原外国语学校校长、成都市特级校长曾成彬先生，成都玉林中学校长、成都市特级校长邓铭先生，成都金牛实验中学校长、正高级教师、四川省特级教师刘仲文先生，成都市特级校长、全国优秀教师、四川省政府督学、原川大附小校长余强先生，《教育科学论坛》副主编、四川省中小学教育教学研究共同体“校长论坛”主持人张泽科先生，组成教育视导专家组。冠城集团执行董事洪振棠先生，冠城集团副总裁杨凯钤女士，冠城集团教育事业部副总经理陈伟先生参加本次教育视导活动。</p>
+            </div>
+        </div>
+        <div class="go-wrap">
+            <div class="pw2 clearfix">
+                <a href="news-detail.html" class="nowti">上一条<span>2018“感动冠城教育”十大年度人物评选结果公示</span></a>
+                <a href="news-detail.html" class="nowti">下一条<span>冠城集团洪清宜董事长致全体教师的一封信</span></a>
+            </div>
+        </div>
+        <ul class="back-wrap clearfix">
+            <li class="back-prev back-arrow hide"><a href="news-detail.html" class="icon iconfont icon-iconset0415"></a></li>
+            <li class="back-next back-arrow hide"><a href="news-detail.html" class="icon iconfont icon-iconset0416"></a></li>
+            <li class="back-list"><a href="news.html">返回</a></li>
+        </ul>
+    </div>
+</div>
+<!-- container -->
+@@include('./footer.html')
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script>
+    $(function(){
+        function backShow() {
+            if (isMobile) { 
+                $('.back-arrow').removeClass('hide');
+                return; 
+            }
+            var pos = $('.nd-t').offset().top - w_height;
+            var st = $(window).scrollTop();
+            var ft = $('.go-wrap').offset().top - w_height;
+            if (st > pos && st < ft) {
+                $('.back-arrow').removeClass('hide');
+            } else {
+                $('.back-arrow').addClass('hide');
+            }
+        }
+        backShow();
+        $(window).scroll(function() {
+            backShow();
+        });
+    })
+</script>
+</body>
+</html>

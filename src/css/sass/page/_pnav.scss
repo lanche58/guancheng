@@ -1,0 +1,52 @@
+.pnav{
+    background: $white;
+    border-bottom: 1px solid $bc1;
+    line-height: 24px;
+    li{
+        margin: 0 (45 / 1920) * 100%;
+        > a{
+            display: block;
+            position: relative;
+            padding: (90px - 24px) / 2 0;
+            font-weight: bold;
+            color: $fc1;
+            &:before{
+                @include hl($mc2, 5px);
+            }
+            &.act{
+                &:before{
+                    @include hlw;
+                }
+            }
+            @media screen and (min-width:1025px) {
+                &:hover:before{
+                    @include hlw;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1366px) {
+        li > a{
+            padding: (70px - 24px) / 2 0;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        position: relative;
+        height: 50px;
+        box-sizing: content-box;
+        @include sx;
+        ul{
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            white-space: nowrap;
+        }
+        li{
+            margin: 0 25px;
+            > a{
+                padding: (50px - 24px) / 2 0;
+            }
+        }
+    }
+}
