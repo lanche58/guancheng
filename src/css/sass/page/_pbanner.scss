@@ -28,6 +28,9 @@
         }
         .pic2{
             position: static;
+            img{
+                transform: none !important;
+            }
         }
     }
 }

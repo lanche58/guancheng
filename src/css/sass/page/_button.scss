@@ -144,10 +144,44 @@
         font-size: 24px;
         font-weight: bold;
     }
+    @media screen and (max-width:1366px) {
+        .ch{
+            font-size: 40px;
+        }
+        .en{
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .ch{
+            font-size: 32px;
+        }
+        .en{
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ch{
+            font-size: 26px;
+        }
+        .en{
+            margin-top: 3px;
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ch{
+            font-size: 22px;
+        }
+        .en{
+            font-size: 12px;
+        }
+    }
 }
 
 .dec-wrap{
     text-align: center;
+    line-height: 0;
     img{
         vertical-align: bottom;
         width: 48px;
@@ -284,7 +318,7 @@
         @media screen and (min-width:1025px) {
             &:hover{
                 background: $mc2;
-                color: $white;
+                color: $white !important;
             }
         }
     }
@@ -400,4 +434,164 @@
     @media screen and (max-width:481px) {
         height: 58px;
     }
+}
+
+.job-title{
+    color: $mc2;
+    .ch{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .en{
+        margin-top: 3px;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        span{
+            @include di;
+            position: relative;
+            &:before, &:after{
+                @include ba;
+                top: 50%;
+                width: 22px;
+                height: 1px;
+                background: $mc2;
+            }
+            &:before{
+                right: 100%;
+                margin-right: 10px;
+            }
+            &:after{
+                left: 100%;
+                margin-left: 10px;
+            }
+        }
+    }
+    @media screen and (max-width:861px) {
+        .ch{
+            font-size: 32px;
+        }
+        .en{
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ch{
+            font-size: 26px;
+        }
+        .en{
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ch{
+            font-size: 22px;
+        }
+        .en{
+            font-size: 12px;
+        }
+    }
+}
+
+.sch-slogan, .sch-ti{
+    span{
+        @include di;
+    }
+}
+
+.sch-slogan{
+    line-height: 1.25;
+    font-size: 32px;
+    color: $fc1;
+    span{
+        border-left: 3px solid $mc2;
+        border-right: 3px solid $mc2;
+        padding: 0 48px;
+    }
+    @media screen and (max-width:1366px) {
+        font-size: 26px;
+        span{
+            padding: 0 40px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        font-size: 22px;
+        span{
+            padding: 0 (40 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        font-size: 20px;
+    }
+}
+
+.sch-ti{
+    line-height: 42px;
+    font-size: 20px;
+    font-weight: bold;
+    color: $fc1;
+    white-space: nowrap;
+    span{
+        position: relative;
+        background: $mc2;
+        padding: 0 60px;
+        &:before, &:after{
+            @include ba;
+            top: 0;
+            border-top: 21px solid transparent;
+            border-bottom: 21px solid transparent;
+            color: $white;
+        }
+        &:before{
+            left: 0;
+            border-left: 22px solid;
+        }
+        &:after{
+            right: 0;
+            border-right: 22px solid;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width:601px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width:481px) {
+        font-size: 14px;
+        line-height: 36px;
+        span{
+            padding: 0 40px;
+            &:before, &:after{
+                border-top-width: 18px;
+                border-bottom-width: 18px;
+            }
+            &:before{
+                border-left-width: 16px;
+            }
+            &:after{
+                border-right-width: 16px;
+            }
+        }
+    }
+}
+
+.dec-wave{
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    > img{
+        width: 100%;
+        vertical-align: bottom;
+    }
+}
+
+.dec-en2{
+    color: $white;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 25px;
 }

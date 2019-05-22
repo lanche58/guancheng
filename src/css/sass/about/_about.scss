@@ -1,0 +1,62 @@
+.ab-info{
+    background: $mc3;
+    padding: 35px 75px 50px;
+    .dec-wrap{
+        margin-bottom: 40px;
+    }
+    .dec-en2{
+        margin-top: 110px;
+    }
+}
+
+.ab1{
+    padding: 90px 0 100px;
+    .ab-info{
+        margin-top: 60px;
+    }
+}
+
+.leader-info{
+    padding-left: 40px;
+    .ri{
+        width: 340px;
+        float: right;
+        margin-left: 70px;
+    }
+    .le{
+        overflow: hidden;
+        font-size: 24px;
+        color: $fc1;
+        text-align: justify;
+    }
+    .pic{
+        width: 230px;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+    .position{
+        margin-bottom: 8px;
+        color: $fc1;
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    .name{
+        margin-bottom: 20px;
+        color: $fc1;
+        font-size: 18px;
+        span{
+            font-size: 16px;
+        }
+        i{
+            color: $hc1;
+        }
+    }
+    .leader-name{
+        line-height: 1;
+        text-align: right;
+        img{
+            max-width: 100%;
+            vertical-align: bottom;
+        }
+    }
+}

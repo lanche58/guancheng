@@ -1,0 +1,137 @@
+.branch-list{
+    margin-left: -1px;
+    li{
+        float: left;
+        width: 16.66%;
+        margin-bottom: 1px;
+    }
+    a{
+        display: block;
+        position: relative;
+        margin-left: 1px;
+        background: $mc1;
+        background: $mco13;
+        height: 400px;
+        padding: 35px 30px 0;
+        color: $white;
+        font-size: 14px;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc2;
+                background: $mco29;
+                .addr{
+                    margin-top: 30px;
+                    .icon{
+                        color: $mc1;
+                    }
+                }
+                .more{
+                    transform: none;
+                    @include show;
+                }
+            }
+        }
+    }
+    .num{
+        position: relative;
+        padding-bottom: 5px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        &:before{
+            @include ba;
+            left: 0;
+            bottom: 0;
+            width: 10px;
+            height: 3px;
+            background: $white;
+        }
+    }
+    .nowti{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .tx{
+        margin-top: 25px;
+        height: 24px * 3;
+    }
+    .addr{
+        margin-top: 130px;
+        line-height: 24px;
+        @include mt4;
+        .icon{
+            @include di;
+            margin-right: 7px;
+            color: $mc2;
+            font-size: 14px;
+            @include mt3;
+        }
+    }
+    .more{
+        @include plr;
+        bottom: 0;
+        height: 56px;
+        background: $mc1;
+        text-align: center;
+        line-height: 56px;
+        transform: translateY(100%);
+        @include hide;
+        @include mt4;
+    }
+    @media screen and (max-width:1366px) {
+        a{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        li{
+            width: 33.33%;
+            margin-bottom: 0;
+        }
+        a{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .addr{
+            margin-top: 30px;
+        }
+        .more{
+            @include show;
+            transform: none;
+        }
+    }
+    @media screen and (max-width:781px) {
+        li{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:601px) {
+        a{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        li{
+            width: 100%;
+            + li{
+                margin-top: 10px;
+            }
+        }
+        a{
+            padding: 25px 5% 0;
+            height: 340px;
+        }
+        .num{
+            margin-bottom: 30px;
+        }
+        .tx{
+            margin-top: 15px;
+        }
+        .more{
+            height: 46px;
+            line-height: 46px;
+            font-size: 12px;
+        }
+    }
+}

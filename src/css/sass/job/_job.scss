@@ -1,0 +1,79 @@
+.job-pw{
+    width: 960px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.job-intro{
+    line-height: 1.4;
+    color: $mc2;
+    font-size: 40px;
+    @media screen and (max-width:861px) {
+        font-size: 32px;
+    }
+    @media screen and (max-width:601px) {
+        font-size: 26px;
+    }
+    @media screen and (max-width:481px) {
+        font-size: 22px;
+    }
+}
+
+.iidea-list{
+    border-top: 1px solid $mc2;
+    border-bottom: 1px solid $mc2;
+    padding: 18px 0;
+    li{
+        width: 33.33%;
+        float: left;
+    }
+    .pai{
+        padding-bottom: (200 / 320) * 100%;
+    }
+    @media screen and (max-width:601px) {
+        padding: (18 / 600) * 100% 0;
+    }
+}
+
+.job1{
+    padding: 130px 0 65px;
+    .job-intro{
+        margin-top: 30px;
+    }
+    .iidea-list{
+        margin-top: 45px;
+    }
+    .dec-en{
+        margin-top: 75px;
+    }
+    .dec-wrap{
+        margin-top: 190px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (130 / 600) * 100vw 0 (65 / 600) * 100vw;
+        .dec-wrap{
+            margin-top: (190 / 600) * 100vw;
+        }
+        .dec-en{
+            margin-top: (75 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .iidea-list{
+            margin-top: 35px;
+        }
+    }
+}
+
+.job2{
+    padding: 80px 0 100px;
+    .job-list{
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (80 / 600) * 100vw 0 (100 / 600) * 100vw;
+        .job-list{
+            margin-bottom: 10vw;
+        }
+    }
+}

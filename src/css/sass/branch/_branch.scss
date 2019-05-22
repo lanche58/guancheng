@@ -1,0 +1,52 @@
+.bra1{
+    padding: (230 / 1920) * 100% (58 / 1920) * 100% (300 / 1920) * 100%;
+    @media screen and (max-width:1024px) {
+        padding: 120px 5% 160px;
+    }
+    @media screen and (max-width:601px) {
+        padding-top: (120 / 600) * 100vw;
+        padding-bottom: (160 / 600) * 100vw;
+    }
+}
+
+.bra-logo{
+    > img{
+        max-width: 100%;
+        vertical-align: bottom;
+    }
+}
+
+.btn-visit-web{
+    background: $hc3;
+    font-size: 14px;
+    line-height: 24px;
+    padding: (100px - 24px) / 2 70px;
+    @media screen and (min-width:1025px) {
+        &:hover{
+            background: $mc2;
+            color: $white;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding: (38 / 600) * 100vw (70 / 600) * 100vw;
+    }
+}
+
+.bra2{
+    padding: 80px 0 100px;
+    .freeTx{
+        margin-top: 60px;
+    }
+    .link{
+        margin-top: 70px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (80 / 600) * 100vw 0 (100 / 600) * 100vw;
+        .freeTx{
+            margin-top: 10vw;
+        }
+        .link{
+            margin-top: (70 / 600) * 100vw;
+        }
+    }
+}

@@ -269,11 +269,20 @@ function setLayer(addr){
             if (data == "" || data == null) {
                 return;
             } else {
-                $('body').append(data);
-                $('html').addClass('open'); 
-                setTimeout(function(){
+                var $ly = $('.ly-box');
+                var lyLen = $('.ly-box').length;
+                if (lyLen) {
+                    $ly.remove();
+                    $('body').append(data);
                     $('.ly-box').addClass('show');
-                }, 100);
+
+                } else {
+                    $('body').append(data);
+                    setTimeout(function(){
+                        $('.ly-box').addClass('show');
+                    }, 100);
+                }
+                $('html').addClass('open');
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown){ $('.ly-box').remove(); }
@@ -292,7 +301,12 @@ function setLayer(addr){
 };
 $(document).on(_click, '.ly-btn', function(e){
     e.preventDefault();
-    setLayer($(this).attr('href'));
+    var url = $(this).attr('href');
+    if (url) {
+        setLayer($(this).attr('href'));
+    } else {
+        alert('没有了');
+    }
 });
 
 // 截图文字段为一个一个

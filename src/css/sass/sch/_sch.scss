@@ -95,3 +95,147 @@
     margin: 0 auto;
     max-width: 90%;
 }
+
+.sch-info{
+    line-height: 1.5;
+    color: $fc1;
+    .tx1{
+        font-weight: bold;
+        font-size: 32px;
+    }
+    .tx2{
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    @media screen and (max-width:1366px) {
+        .tx1{
+            font-size: 26px;
+        }
+        .tx2{
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .tx1{
+            font-size: 22px;
+        }
+        .tx2{
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .tx1{
+            font-size: 20px;
+        }
+        .tx2{
+            margin-top: 5px;
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .tx1{
+            font-size: 18px;
+        }
+        .tx2{
+            margin-top: 2px;
+            font-size: 14px;
+        }
+    }
+}
+
+.sch-xi{
+    .ti{
+        margin-top: 40px;
+        font-size: 18px;
+    }
+    @media screen and (max-width:1366px) {
+        .ti{
+            margin-top: 30px;
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .ti{
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ti{
+            margin-top: (20 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ti{
+            font-size: 12px;
+        }
+    }
+}
+
+.sch2{
+    padding-top: 90px;
+    .sch-info{
+        margin-top: 50px;
+    }
+    .sch-xi{
+        margin-top: 25px;
+    }
+    .dec-wrap{
+        margin-top: 60px;
+    }
+    @media screen and (max-width:601px) {
+        padding-top: (90 / 600) * 100vw;
+        .sch-info{
+            margin-top: (50 / 600) * 100vw;
+        }
+        .sch-xi{
+            margin-top: (25 / 600) * 100vw;
+        }
+        .dec-wrap{
+            margin-top: 10vw;
+        }
+    }
+}
+
+.sch3{
+    padding-top: 60px;
+    .dec-en{
+        margin-top: 35px;
+    }
+    .freeTx{
+        margin-top: 40px;
+    }
+    @media screen and (max-width:601px) {
+        padding-top: 10vw;
+        .dec-en{
+            margin-top: (35 / 600) * 100vw;
+        }
+        .freeTx{
+            margin-top: (40 / 600) * 100vw;
+        }
+    }
+}
+
+.sch4{
+    padding: 100px 0 120px;
+    .sch-ti{
+        margin-top: 75px;
+    }
+    .freeTx{
+        margin-top: 35px;
+    }
+    @media screen and (max-width:1366px) {
+        .sch-ti{
+            margin-top: 55px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding: (100 / 600) * 100vw 0 (120 / 600) * 100vw;
+        .sch-ti{
+            margin-top: (55 / 600) * 100vw;
+        }
+        .freeTx{
+            margin-top: (35 / 600) * 100vw;
+        }
+    }
+}
