@@ -1891,12 +1891,13 @@
     margin-top: 60px; }
 
 .leader-info {
-  padding-left: 40px; }
+  padding-left: 20px; }
   .leader-info .ri {
     width: 340px;
     float: right;
-    margin-left: 70px; }
+    margin-left: 90px; }
   .leader-info .le {
+    padding-top: 280px;
     overflow: hidden;
     font-size: 24px;
     color: #333;
@@ -1919,6 +1920,7 @@
     .leader-info .name i {
       color: #ccc; }
   .leader-info .leader-name {
+    margin-top: 20px;
     line-height: 1;
     text-align: right; }
     .leader-info .leader-name img {

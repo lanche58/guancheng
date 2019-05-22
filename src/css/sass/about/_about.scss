@@ -17,13 +17,14 @@
 }
 
 .leader-info{
-    padding-left: 40px;
+    padding-left: 20px;
     .ri{
         width: 340px;
         float: right;
-        margin-left: 70px;
+        margin-left: 90px;
     }
     .le{
+        padding-top: 280px;
         overflow: hidden;
         font-size: 24px;
         color: $fc1;
@@ -52,6 +53,7 @@
         }
     }
     .leader-name{
+        margin-top: 20px;
         line-height: 1;
         text-align: right;
         img{

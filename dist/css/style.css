@@ -1523,13 +1523,13 @@ a.pswp__share--download:hover{background:#ddd}
 .ab-info .dec-en2{margin-top:110px}
 .ab1{padding:90px 0 100px}
 .ab1 .ab-info{margin-top:60px}
-.leader-info{padding-left:40px}
-.leader-info .ri{width:340px;float:right;margin-left:70px}
-.leader-info .le{overflow:hidden;font-size:24px;color:#333;text-align:justify}
+.leader-info{padding-left:20px}
+.leader-info .ri{width:340px;float:right;margin-left:90px}
+.leader-info .le{padding-top:280px;overflow:hidden;font-size:24px;color:#333;text-align:justify}
 .leader-info .pic{width:230px;max-width:100%;margin-bottom:25px}
 .leader-info .position{margin-bottom:8px;color:#333;font-size:24px;line-height:1.4}
 .leader-info .name{margin-bottom:20px;color:#333;font-size:18px}
 .leader-info .name span{font-size:16px}
 .leader-info .name i{color:#ccc}
-.leader-info .leader-name{line-height:1;text-align:right}
+.leader-info .leader-name{margin-top:20px;line-height:1;text-align:right}
 .leader-info .leader-name img{max-width:100%;vertical-align:bottom}
