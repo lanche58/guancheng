@@ -1,0 +1,57 @@
+.banner{
+    margin-top: 64px;
+    .pic2{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .slick-dots{
+        left: auto;
+        right: 28px - 12px;
+        bottom: 50%;
+        transform: translateY(50%);
+        bottom: 15%\9;
+        transform: none\9;
+        li{
+            position: relative;
+            display: block;
+            width: 28px;
+            height: 28px;
+            margin: 0;
+            background: none;
+            &:before, &:after{
+                @include ba;
+            }
+            &:before{
+                @include c(4px);
+                background: $mc2;
+                top: 50%;
+                left: 50%;
+                margin: -2px 0 0 -2px;
+            }
+            &:after{
+                @include tblr;
+                border: 1px solid $mc2;
+                @include hide;
+                @include mt4;
+            }
+            + li{
+                margin-top: 10px;
+            }
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    &:after{
+                        @include show;
+                        transform: rotate(135deg);
+                    }
+                }
+            }
+        }
+        .slick-active{
+            &:after{
+                @include show;
+                transform: rotate(135deg);
+            }
+        }
+    }
+}

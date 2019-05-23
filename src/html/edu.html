@@ -259,10 +259,26 @@
         $('.his-year-list').slick({
             slidesToShow: 5,
             slidesToScroll: 1,
-            focusOnSelect: true
+            focusOnSelect: true,
+            responsive: [{
+                breakpoint: 862,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 642,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }
+            ]
         }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
             var next = nextSlide + 5;
-            // if (w_width < 482) { next = nextSlide + 3; }
+            if (w_width < 862 && w_width >= 642) { next = nextSlide + 4; }
+            else if (w_width < 642) { next = nextSlide + 3; }
             $('.his-year-list .item').removeClass('act').eq(next).addClass('act');
             $('.his-tx-list li').hide().eq(nextSlide).show();
         });

@@ -43,12 +43,12 @@
 }
 .ix-title{
     color: $white;
-    font-weight: bold;
     .ch{
         position: relative;
         padding-left: 25px;
         font-size: 32px;
         color: $mc2;
+        font-weight: bold;
     }
     .wrap{
         margin-top: 14px;
@@ -58,10 +58,12 @@
     .en{
         font-style: italic;
         line-height: .8;
+        font-weight: bold;
     }
     .en1{
         margin-bottom: 13px;
         font-size: 64px;
+        font-weight: bold;
     }
 }
 
@@ -85,7 +87,15 @@
             color: $white;
         }
     }
+    @media screen and (max-width:601px) {
+        width: 140px;
+        height: 48px;
+        line-height: 48px;
+    }
     @media screen and (max-width:481px) {
+        width: 118px;
+        height: 38px;
+        line-height: 38px;
         .icon{
             margin-left: 5px;
         }
@@ -93,7 +103,7 @@
 }
 
 .btn-more-1{
-    background: 140px;
+    width: 140px;
     height: 48px;
     background: $hc3;
     color: $fc2;
@@ -211,6 +221,13 @@
     color: $white;
     font-size: 20px;
     @include mt3;
+    @media screen and (max-width:481px) {
+        width: 50px;
+        height: 50px;
+        margin: -25px 0 0 -25px;
+        line-height: 50px - 4px;
+        font-size: 16px;
+    }
 }
 
 .btn-video-hover{

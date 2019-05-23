@@ -1,0 +1,119 @@
+.in-list{
+    margin-left: -20px;
+    .item > a{
+        display: block;
+        position: relative;
+        margin-left: 20px;
+        padding-bottom: 72px;
+        background: $white;
+        overflow: hidden;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .txts{
+                    bottom: -72px;
+                }
+                .b{
+                    padding-top: 23px;
+                }
+            }
+        }
+    }
+    .pai{
+        padding-bottom: (180 / 320) * 100%;
+    }
+    .date1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $white;
+        color: $mc1;
+    }
+    .txts{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -100%;
+        height: 100%;
+        background: $white;
+        padding: 0 25px 72px 35px;
+        box-sizing: content-box;
+        font-size: 14px;
+        @include mt4;
+    }
+    .ti{
+        height: 22px * 2;
+        margin-bottom: 18px;
+        color: $fc1;
+        line-height: 22px;
+        font-weight: bold;
+    }
+    .tx{
+        height: 22px * 3;
+        line-height: 22px !important;
+    }
+    .date2{
+        position: absolute;
+        left: 0;
+        bottom: 72px;
+    }
+    .more{
+        position: absolute;
+        right: 25px;
+        bottom: 72px;
+        line-height: 48px;
+        color: $mc1;
+        font-size: 12px;
+        .icon{
+            @include di;
+            margin-left: 10px;
+            font-size: 12px;
+        }
+    }
+    .icon-angle-right{
+        position: absolute;
+        right: 100%;
+        top: 0;
+        margin-right: 8px;
+        line-height: 22px;
+        color: $mc1;
+        font-size: 12px;
+    }
+    .b{
+        padding-top: 14px;
+        @include mt4;
+    }
+    .slick-dots{
+        padding-left: 20px;
+        position: static;
+        margin-top: 40px - 3px;
+        li{
+            position: relative;
+            width: 16px;
+            margin: 0 10px;
+            border-radius: 0;
+            background: none;
+            &:after{
+                @include ba;
+                left: 0;
+                right: 0;
+                top: 50%;
+                background: $white;
+                height: 2px;
+                margin-top: -1px;
+                @include mt3;
+            }
+            @media screen and (min-width:1025px) {
+                &:hover:after{
+                    background: $mc2;
+                }
+            }
+        }
+        .slick-active{
+            &:after{
+                height: 4px;
+                background: $mc2;
+                margin-top: -2px;
+            }
+        }
+    }
+}

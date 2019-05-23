@@ -1,0 +1,87 @@
+.row-bg{
+    height: 100%;
+    @include bg;
+    padding-top: 64px;
+}
+
+.ix-news{
+    padding-top: (114 / 1920) * 100%;
+    .t{
+        position: relative;
+        min-height: 60px;
+        margin-bottom: (200 / 1920) * 100%;
+    }
+    .ix-title{
+        padding-right: 160px + 30px;
+    }
+    .more{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.pw5{
+    width: 1340px;
+    margin: 0 auto;
+}
+
+.ix-edu{
+    padding: (200 / 1920) * 100% 64px 0 (185 / 1920) * 100%;
+    .tx{
+        margin-top: 120px;
+        height: 28px * 4;
+        width: 560px;
+        color: $white;
+        line-height: 28px !important;
+    }
+    .more{
+        margin-top: 60px;
+    }
+}
+
+.iedu-data{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 64px;
+    width: (440 / 1920) * 100%;
+    padding: 104px 0 40px 50px;
+    border-left: 1px solid $white;
+    border-color: $white-3;
+    color: $white;
+    li{
+        height: 20%;
+    }
+    .num{
+        font-size: 56px;
+        color: $mc2;
+        line-height: 50px;
+        .icon{
+            @include di;
+            margin-left: 10px;
+        }
+    }
+    .ti{
+        margin-top: 12px;
+        font-weight: bold;
+    }
+}
+
+.isc-nav{
+    margin: 0 64px;
+    border-bottom: 1px solid $white;
+    border-color: $white-3;
+    color: $white;
+    line-height: 24px;
+    li{
+        width: 16.66%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    p{
+        @include di;
+        position: relative;
+        padding: 0 7px;
+    }
+}

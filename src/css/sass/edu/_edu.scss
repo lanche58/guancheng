@@ -4,6 +4,7 @@
     .edu-t{
         position: relative;
         padding: 120px 0;
+        margin-bottom: 32px;
         @include bg;
         background-image: url(../img/job_bg1.jpg);
     }
@@ -23,7 +24,7 @@
         width: 800px;
         margin: 0 auto;
         max-width: 90%;
-        padding-top: 110px;
+        padding-top: 110px - 32px;
         .dec-wrap{
             margin-bottom: 25px;
         }
@@ -31,12 +32,44 @@
     .edu-video{
         margin-bottom: 90px;
     }
+    @media screen and (max-width:861px) {
+        .edu-b{
+            padding-top: 60px;
+        }
+        .edu-video{
+            margin-bottom: 70px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding-bottom: (80 / 600) * 100vw;
+        .edu-t{
+            padding: (120 / 600) * 100vw 0;
+        }
+        .dec-en{
+            margin-top: (55 / 600) * 100vw;
+        }
+        .edu-b{
+            padding-top: 10vw;
+            .dec-wrap{
+                margin-bottom: (25 / 600) * 100vw;
+            }
+        }
+        .edu-video{
+            margin-bottom: (70 / 600) * 100vw;
+        }
+    }
 }
 
 .edu-video{
     position: relative;
     .pai{
         padding-bottom: (450 / 800) * 100%;
+    }
+    @media screen and (max-width:861px) {
+        padding: 30px;
+    }
+    @media screen and (max-width:481px) {
+        padding: 20px;
     }
 }
 
@@ -102,6 +135,55 @@
         border-right: 1px solid $mc2;
         border-top: 1px solid $mc2;
     }
+    @media screen and (max-width:861px) {
+        &:after{
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        &:before{
+            top: 15px;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+        }
+        .square1{
+            top: 1px;
+            left: 1px;
+        }
+        .square2{
+            top: 1px;
+            right: 1px;
+        }
+        .square3{
+            bottom: 1px;
+            right: 1px;
+        }
+        .square4{
+            bottom: 1px;
+            left: 1px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        &:before{
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+        }
+        .square{
+            width: 9px;
+            height: 9px;
+            &:before{
+                width: 3px;
+                height: 3px;
+                margin: 0;
+                top: 3px;
+                left: 3px;
+            }
+        }
+    }
 }
 
 .edu2{
@@ -123,12 +205,33 @@
     .his-tx-list{
         margin-top: 80px;
     }
+    @media screen and (max-width:601px) {
+        padding-top: (100 / 600) * 100vw;
+        .dec-wrap{
+            margin-top: (65 / 600) * 100vw;
+        }
+        .dec-en{
+            margin-top: (25 / 600) * 100vw;
+        }
+        .ab-title{
+            margin-bottom: (75 / 600) * 100vw;
+        }
+        .his-tx-list{
+            margin-top: (80 / 600) * 100vw;
+        }
+    }
 }
 
 .edu3{
     padding: 85px 0;
     .ab-title{
         margin-bottom: 50px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (85 / 600) * 100vw 0;
+        .ab-title{
+            margin-bottom: (50 / 600) * 100vw;
+        }
     }
 }
 
@@ -143,6 +246,21 @@
     }
     .more{
         margin-top: 60px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (90 / 600) * 100vw 0 (100 / 600) * 100vw;
+        .more{
+            margin-top: 10vw;
+        }
+        .freeTx{
+            margin-top: (35 / 600) * 100vw;
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .freeTx{
+            font-size: 16px;
+        }
     }
 }
 
@@ -180,6 +298,62 @@
         margin-top: 40px;
         color: $mc6;
         font-size: 12px;
+    }
+    @media screen and (max-width:861px) {
+        li{
+            width: 176px + 60px;
+            padding: 30px 0;
+            margin: 0 20px;
+        }
+        .ch{
+            font-size: 26px;
+        }
+        .en{
+            font-size: 16px;
+        }
+        a{
+            width: 176px;
+            height: 176px;
+            padding-top: 56px;
+        }
+        .more{
+            margin-top: 32px;
+        }
+    }
+    @media screen and (max-width:641px) {
+        .ch{
+            font-size: 22px;
+        }
+        .en{
+            font-size: 14px;
+        }
+        a{
+            width: 148px;
+            height: 148px;
+            padding-top: 45px;
+        }
+        .more{
+            margin-top: 25px;
+        }
+        li{
+            width: 148px + 60px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            width: 148px + 40px;
+            padding: 20px 0;
+            margin: 0 10px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        li{
+            width: 148px + 80px;
+            padding: 40px 0;
+            + li{
+                margin-top: 10vw;
+            }
+        }
     }
 }
 
@@ -233,6 +407,9 @@
 
 .edu5{
     padding: 160px 0;
+    @media screen and (max-width:601px) {
+        padding: (160 / 600) * 100vw 0;
+    }
 }
 
 .edu6{
@@ -247,10 +424,12 @@
     .ab-title{
         margin-bottom: 60px;
     }
-}
-
-.edu-honor-wrap{
-    
+    @media screen and (max-width:601px) {
+        padding-top: (100 / 600) * 100vw;
+        .ab-title{
+            margin-bottom: 10vw;
+        }
+    }
 }
 
 .dec-frame{
@@ -287,15 +466,26 @@
     }
     .wrap{
         padding: 50px 5%;
+        @media screen and (max-width:601px) {
+            padding-top: (50 / 600) * 100vw;
+            padding-bottom: (50 / 600) * 100vw;
+        }
     }
 }
 
 .edu-honor-list{
     li{
         width: 50%;
-        padding: 0 45px;
+        padding: 0 30px;
         float: left;
         text-align: center;
         line-height: 2.4;
+    }
+    @media screen and (max-width:861px) {
+        li{
+            width: 100%;
+            padding: 0;
+            line-height: 2;
+        }
     }
 }

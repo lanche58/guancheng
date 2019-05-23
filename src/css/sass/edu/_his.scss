@@ -21,6 +21,26 @@
         font-size: 24px;
         font-weight: bold;
     }
+    @media screen and (max-width:601px) {
+        height: 80px;
+        .year{
+            width: 80px;
+            height: 80px;
+            line-height: 80px - 8px;
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        padding: 0 40px;
+        height: 64px;
+        .year{
+            width: 64px;
+            height: 64px;
+            border-width: 2px;
+            line-height: 64px - 4px;
+            font-size: 18px;
+        }
+    }
 }
 
 .slick-arrow{
@@ -54,6 +74,15 @@
             }
         }
     }
+    @media screen and (max-width:481px) {
+        .slick-arrow{
+            width: 30px;
+            height: 30px;
+            margin-top: -15px;
+            font-size: 12px;
+            line-height: 30px;
+        }
+    }
 }
 
 .his-tx-list{
@@ -66,5 +95,10 @@
     }
     li{
         display: none;
+    }
+    @media screen and (max-width:601px) {
+        .freeTx{
+            margin-top: (35 / 600) * 100vw;
+        }
     }
 }

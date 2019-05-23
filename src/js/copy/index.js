@@ -68,6 +68,7 @@ $(document).ready(function(){
 		showPage(activeIndex + (up?-1:1));
 	}			
 });
+showPage(3);
 	var curIndex = 1,
 		canRoll = true,
 		ci = 1;
@@ -117,8 +118,8 @@ $(document).ready(function(){
 	});
 	function init(){
 		if(!isMobile){
-			$('.banner .item').css({height:w_height});
-			setImgMax($('.banner .pic2'),1920,950,w_width,w_height);
+			$('.banner .item').css({height:w_height - $mtoph});
+			setImgMax($('.banner .pic2'),1920,1000,w_width,w_height - $mtoph);
 			$('.content').css({top:-(ci-1)*w_height});
 			$('.rowh').css({height:w_height});
 		}else{
@@ -135,20 +136,21 @@ $(document).ready(function(){
 	});
 	$('.banner').slick({
 		speed: 1000,
-		arrows: true,
-		dots: true,
-		autoplay: true,
-		autoplaySpeed: 5000,
-		fade: true,
-		pauseOnHover: false
-	}).on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.banner .item').removeClass('ba-active');
-		$('.banner .item').eq(nextSlide).addClass('ba-active');
-	});
-
-	$('.in-res-list').slick({
 		arrows: false,
 		dots: true,
 		autoplay: true,
-		autoplaySpeed: 5000
+		autoplaySpeed: 5000,
+		// fade: true,
+		pauseOnHover: false
+	});
+
+	$('.in-list').slick({
+		speed: 1000,
+		arrows: false,
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		pauseOnHover: false,
+		slidesToShow: 4,
+		slidesToScroll: 4
 	});
