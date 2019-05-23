@@ -2730,3 +2730,17 @@
     margin-top: 35px; }
   .his-tx-list li {
     display: none; }
+
+.content {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; }
+  @media screen and (max-width: 1024px) {
+    .content {
+      position: static;
+      padding-top: 60px; } }
+
+.row {
+  position: relative;
+  overflow: hidden; }

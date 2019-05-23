@@ -1831,3 +1831,8 @@ a.pswp__share--download:hover{background:#ddd}
 .his-tx-list{width:626px;margin:0 auto;max-width:100%;color:#fff}
 .his-tx-list .freeTx{margin-top:35px}
 .his-tx-list li{display:none}
+.content{position:fixed;left:0;top:0;width:100%}
+@media screen and (max-width:1024px){
+.content{position:static;padding-top:60px}
+}
+.row{position:relative;overflow:hidden}
