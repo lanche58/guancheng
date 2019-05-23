@@ -158,7 +158,7 @@
         </div>
     </div>
     
-    <div class="ab2 pw4">
+    <div class="ab2 pw4" id="ab2">
         <div class="ab-title tac">
             <h2 class="ch">领导风采</h2>
             <h3 class="en">Leadership style</h3>
@@ -382,5 +382,38 @@
 
 <script src="js/plugin.js"></script>
 <script src="js/page.js"></script>
+<script>
+    $(function(){
+        $('.f-nav .about').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
+        $('.pnav a').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
+        $('.mtv .about').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                var w = $menuBox.width();
+                $('html').removeClass('open');
+                $menuBtn.removeClass('active').stop(false,false).animate({right:0});
+                $('.menuBlack').stop().fadeOut(600);
+                $menuBox.stop(false,false).animate({right:-w+"px"},function(){
+                    $(this).hide();
+                });
+                navItem = 0;
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
+    })
+</script>
 </body>
 </html>
