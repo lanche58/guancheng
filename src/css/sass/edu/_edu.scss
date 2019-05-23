@@ -1,0 +1,301 @@
+.edu1{
+    background: $white;
+    padding-bottom: 80px;
+    .edu-t{
+        position: relative;
+        padding: 120px 0;
+        @include bg;
+        background-image: url(../img/job_bg1.jpg);
+    }
+    .ab-title .ch{
+        color: $mc2;
+    }
+    .dec-en{
+        margin-top: 55px;
+    }
+    .edu-cap{
+        position: absolute;
+        left: 50%;
+        margin-left: -32px;
+        bottom: -32px;
+    }
+    .edu-b{
+        width: 800px;
+        margin: 0 auto;
+        max-width: 90%;
+        padding-top: 110px;
+        .dec-wrap{
+            margin-bottom: 25px;
+        }
+    }
+    .edu-video{
+        margin-bottom: 90px;
+    }
+}
+
+.edu-video{
+    position: relative;
+    .pai{
+        padding-bottom: (450 / 800) * 100%;
+    }
+}
+
+#vPlay{
+    position: absolute;
+    @include tblr;
+    z-index: 9;
+}
+
+.dec-border{
+    &:after, &:before{
+        @include ba;
+        border: 1px solid $mc2;
+    }
+    &:before{
+        top: -15px;
+        bottom: -15px;
+        left: -25px;
+        right: -25px;
+    }
+    &:after{
+        top: -30px;
+        bottom: -30px;
+        left: -40px;
+        right: -40px;
+    }
+    .square{
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        box-sizing: content-box;
+        &:before{
+            @include ba;
+            top: 50%;
+            left: 50%;
+            margin: -3px 0 0 -3px;
+            width: 6px;
+            height: 6px;
+            background: $mc2;
+        }
+    }
+    .square1{
+        top: -29px;
+        left: -39px;
+        border-right: 1px solid $mc2;
+        border-bottom: 1px solid $mc2;
+    }
+    .square2{
+        top: -29px;
+        right: -39px;
+        border-left: 1px solid $mc2;
+        border-bottom: 1px solid $mc2;
+    }
+    .square3{
+        bottom: -29px;
+        right: -39px;
+        border-left: 1px solid $mc2;
+        border-top: 1px solid $mc2;
+    }
+    .square4{
+        bottom: -29px;
+        left: -39px;
+        border-right: 1px solid $mc2;
+        border-top: 1px solid $mc2;
+    }
+}
+
+.edu2{
+    padding: 100px 0 45px;
+    @include bg;
+    background-image: url(../img/job_bg1.jpg);
+    .ab-title .ch{
+        color: $mc2;
+    }
+    .dec-wrap{
+        margin-top: 65px;
+    }
+    .dec-en{
+        margin-top: 25px;
+    }
+    .ab-title{
+        margin-bottom: 70px;
+    }
+    .his-tx-list{
+        margin-top: 80px;
+    }
+}
+
+.edu3{
+    padding: 85px 0;
+    .ab-title{
+        margin-bottom: 50px;
+    }
+}
+
+.edu4{
+    padding: 100px 0 120px;
+    background: $white;
+    .freeTx{
+        margin-top: 35px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: $fc1;
+    }
+    .more{
+        margin-top: 60px;
+    }
+}
+
+.edu-link-list{
+    li{
+        position: relative;
+        z-index: 9;
+        width: 320px;
+        padding: 50px 0;
+        margin: 0 30px;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .circle, .circle:before, .circle:after{
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+    a{
+        @include di;
+        @include c(220px);
+        background: $mc2;
+        padding-top: 70px;
+        color: $fc1;
+    }
+    .ch{
+        font-size: 32px;
+        line-height: 1.3;
+    }
+    .en{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .more{
+        margin-top: 40px;
+        color: $mc6;
+        font-size: 12px;
+    }
+}
+
+.dec-circle{
+    .circle, .circle:before, .circle:after{
+        position: absolute;
+        border: 1px solid $fc4;
+        border-radius: 50%;
+        @include mt6;
+    }
+    .circle:before, .circle:after{
+        content: "";
+    }
+    .circle{
+        z-index: -1;
+        &:before{
+            top: 4px;
+            bottom: 4px;
+            left: 4px;
+            right: 4px;
+        }
+        &:after{
+            top: 9px;
+            bottom: 9px;
+            left: 9px;
+            right: 9px;
+        }
+    }
+    .circle1{
+        @include tblr;
+    }
+    .circle2{
+        top: 15px;
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+    }
+    .circle3{
+        top: 30px;
+        bottom: 30px;
+        left: 30px;
+        right: 30px;
+    }
+    .circle4{
+        top: 45px;
+        bottom: 45px;
+        left: 45px;
+        right: 45px;
+    }
+}
+
+.edu5{
+    padding: 160px 0;
+}
+
+.edu6{
+    position: relative;
+    padding: 100px 0 (280 / 1920) * 100%;
+    .dec-img{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+    .ab-title{
+        margin-bottom: 60px;
+    }
+}
+
+.edu-honor-wrap{
+    
+}
+
+.dec-frame{
+    position: relative;
+    z-index: 9;
+    background: $white;
+    border: 2px solid $mc2;
+    padding: 8px;
+    &:before{
+        @include ba;
+        z-index: -1;
+        top: 7px;
+        bottom: 7px;
+        left: 7px;
+        right: 7px;
+        border: 1px solid $mc2;
+    }
+    .dec-wrap{
+        position: absolute;
+        left: 50%;
+        top: -8px;
+        margin-left: -(78px / 2);
+        background: $white;
+        border-left: 3px solid $mc2;
+        border-right: 3px solid $mc2;
+        padding: (22px - 16px) / 2 12px;
+    }
+    .dec-en{
+        @include plr;
+        bottom: -4px;
+        span{
+            background: $white;
+        }
+    }
+    .wrap{
+        padding: 50px 5%;
+    }
+}
+
+.edu-honor-list{
+    li{
+        width: 50%;
+        padding: 0 45px;
+        float: left;
+        text-align: center;
+        line-height: 2.4;
+    }
+}

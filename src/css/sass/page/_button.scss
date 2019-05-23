@@ -203,7 +203,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -(64px / 2) 0 0 -(64px / 2);
+    margin: -32px 0 0 -32px;
     @include c(64px);
     border: 2px solid $white;
     line-height: 64px - 4px;
@@ -217,8 +217,8 @@
     @media screen and (min-width:1025px) {
         &:hover{
             .btn-video{
-                background: $mc1;
-                border-color: $mc1;
+                background: $mc2;
+                border-color: $mc2;
             }
         }
     }

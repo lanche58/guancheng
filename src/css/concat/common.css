@@ -282,7 +282,7 @@ a {
 .slick-slide.dragging img { pointer-events: none; }
 .slick-initialized .slick-slide { display: block; }
 .slick-loading .slick-slide { visibility: hidden; }
-.slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
+.slick-vertical .slick-slide { display: block; height: auto; }
 .slick-arrow.slick-hidden { display: none; }
 .slick-arrow{ position: absolute; z-index: 101; top: 50%; margin-top: -20px; width: 40px; height: 40px; background: #000; }
 .slick-prev{ left: 0; }
