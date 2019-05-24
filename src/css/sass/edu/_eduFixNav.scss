@@ -1,0 +1,86 @@
+.edu-nav{
+    position: fixed;
+    bottom: 50%;
+    transform: translateY(50%);
+    bottom: 10%\9;
+    transform: none\9;
+    right: 0;
+    z-index: 599;
+    width: 130px;
+    line-height: 25px;
+    &:before{
+        @include ba;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 1px;
+        background: $hc1;
+        @include mt6;
+    }
+    a{
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        color: $fc1;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $mc1;
+            }
+        }
+        &.act{
+            color: $mc1;
+            .dot:before{
+                background: $mc2;
+                border-color: $mc2;
+            }
+        }
+    }
+    .dot{
+        position: absolute;
+        top: 5px;
+        left: -7px;
+        @include c(15px);
+        border: 1px solid $fc2;
+        background: $white;
+        &:before{
+            @include ba;
+            top: 2px;
+            bottom: 2px;
+            left: 2px;
+            right: 2px;
+            border: 1px solid $fc2;
+            border-radius: 50%;
+        }
+    }
+    li{
+        padding: 18px 0;
+        @include mt6;
+    }
+    &.hide{
+        &:before{
+            height: 0;
+        }
+        li{
+            transform: translateY(40px);
+            @include hide;
+        }
+    }
+    @media screen and (max-width:1440px) {
+        width: 100px;
+        a{
+            font-size: 14px;
+            padding-left: 18px;
+        }
+        .dot{
+            width: 13px;
+            height: 13px;
+            left: -6px;
+        }
+        li{
+            padding: 15px 0;
+        }
+    }
+    @media screen and (max-width:1221px) {
+        display: none;
+    }
+}
