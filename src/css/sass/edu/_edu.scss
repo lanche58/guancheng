@@ -489,3 +489,244 @@
         }
     }
 }
+
+.edu7{
+    padding: 90px 0 50px;
+    .ab-title{
+        padding-left: 330px + 70px;
+        margin-bottom: 70px;
+    }
+    .edu-logo{
+        width: 330px;
+        height: 330px;
+        margin-right: 70px;
+        float: left;
+        border: 1px solid $mc2;
+        text-align: center;
+        img{
+            vertical-align: bottom;
+            max-width: 80%;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .edu-logo{
+            margin-right: 50px;
+        }
+        .ab-title{
+            padding-left: 330px + 50px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .edu-logo{
+            width: 165px;
+            height: 165px;
+            margin-right: 30px;
+        }
+        .ab-title{
+            padding-left: 165px + 30px;
+            margin-bottom: 50px;
+        }
+    }
+    @media screen and (max-width:641px) {
+        .edu-logo{
+            width: 100%;
+            float: none;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        .ab-title{
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding-top: (90 / 600) * 100vw;
+        .ab-title{
+            margin-bottom: (50 / 600) * 100vw;
+        }
+    }
+}
+
+.goal-list{
+    padding: 0 80px 80px;
+    .ch{
+        margin-bottom: 45px;
+        line-height: 60px;
+        color: $fc1;
+        font-size: 44px;
+    }
+    .en{
+        position: relative;
+        padding-bottom: 25px;
+        font-size: 24px;
+        line-height: 1.4;
+        &:before{
+            @include ba;
+            width: 18px;
+            height: 2px;
+            background: $fc2;
+            bottom: 0;
+            left: 50%;
+            margin-left: -9px;
+        }
+    }
+    .slick-arrow{
+        background: none;
+        margin-top: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        line-height: 60px;
+        font-size: 40px;
+        color: $mc2;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $mc1;
+            }
+        }
+    }
+    .slick-dots{
+        bottom: 0;
+        li{
+            position: relative;
+            margin: 0;
+            padding: 0 39px;
+            border-radius: 0;
+            background: none;
+            width: auto;
+            height: auto;
+            line-height: 1;
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            box-sizing: content-box;
+            letter-spacing: 0;
+            cursor: pointer;
+            &:before{
+                @include ba;
+                z-index: -1;
+                left: 0;
+                right: 0;
+                top: 50%;
+                border-top: 1px dashed $fc2;
+            }
+            &:after{
+                content: "\e70b";
+            }
+            &:nth-child(1){
+                &:before{
+                    left: 50%;
+                }
+            }
+            &:nth-last-child(1){
+                &:before{
+                    right: 50%;
+                }
+            }
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    color: $mc2;
+                }
+            }
+        }
+        .slick-active{
+            color: $mc2;
+        }
+        a{
+            display: none;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .ch{
+            font-size: 36px;
+            line-height: 48px;
+        }
+        .slick-arrow{
+            line-height: 48px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .ch{
+            margin-bottom: 35px;
+            font-size: 28px;
+            line-height: 38px;
+        }
+        .slick-arrow{
+            line-height: 38px;
+            font-size: 32px;
+        }
+        .en{
+            font-size: 20px;
+        }
+        .slick-dots{
+            li{
+                padding: 0 30px;
+            }
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 70px;
+        .ch{
+            margin-bottom: 25px;
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .slick-arrow{
+            line-height: 30px;
+            font-size: 24px;
+        }
+        .en{
+            font-size: 16px;
+        }
+        .slick-dots{
+            li{
+                padding: 0 15px;
+            }
+        }
+    }
+    @media screen and (max-width:481px) {
+        padding-bottom: 60px;
+        .ch{
+            font-size: 20px;
+        }
+        .en{
+            padding-bottom: 15px;
+            font-size: 14px;
+        }
+        .slick-arrow{
+            font-size: 20px;
+        }
+        .slick-dots{
+            li{
+                font-size: 12px;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+.edu8{
+    padding: 100px 0 50px;
+    .dec-en{
+        margin-top: 80px;
+    }
+    .ab-title{
+        margin-bottom: 70px;
+    }
+    @media screen and (max-width:861px) {
+        padding-top: 90px;
+        .ab-title{
+            margin-bottom: 60px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding-top: (90 / 600) * 100vw;
+        .ab-title{
+            margin-bottom: 10vw;
+        }
+        .dec-en{
+            margin-top: (80 / 600) * 100vw;
+        }
+    }
+}

@@ -289,7 +289,7 @@ a {
 .slick-next{ right: 0; }
 .slick-dots { position: absolute; z-index: 100; left: 0; right: 0; bottom: 8%; text-align: center; letter-spacing: -6px; line-height: 0; }
 .slick-dots li { display: inline-block; vertical-align: middle; width: 10px; height: 10px; border-radius: 100%; background: #000; margin: 0 6px; transition: 300ms; }
-.slick-dots li a { display: block; width: 100%; height: 100%; text-indent: -9999px; }
+.slick-dots li a { display: block; width: 100%; height: 100%;  }
 .slick-dots li:hover,
 .slick-dots .slick-active{ background: red; }
 /* slick end */

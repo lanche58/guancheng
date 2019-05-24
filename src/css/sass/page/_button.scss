@@ -65,6 +65,42 @@
         font-size: 64px;
         font-weight: bold;
     }
+    @media screen and (max-width:1366px) {
+        .ch{
+            font-size: 26px;
+        }
+        .en1{
+            font-size: 52px;
+        }
+    }
+    @media screen and (max-width:641px) {
+        .ch{
+            font-size: 18px;
+            padding-left: 15px;
+        }
+        .title-dot{
+            width: 10px;
+            height: 10px;
+            margin-top: -6px;
+            &:before{
+                top: 2px;
+                bottom: 2px;
+                left: 2px;
+                right: 2px;
+            }
+        }
+        .en1{
+            font-size: 38px;
+            margin-bottom: 13px - 5px;
+        }
+        .en2{
+            font-size: 10px;
+        }
+        .wrap{
+            margin-top: 11px;
+            padding-left: 14px;
+        }
+    }
 }
 
 .btn-more{

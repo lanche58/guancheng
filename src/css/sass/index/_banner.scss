@@ -54,4 +54,23 @@
             }
         }
     }
+    @media screen and (max-width:1024px) {
+        margin-top: 0;
+        .pic2{
+            position: static;
+        }
+        .slick-dots{
+            background: $white;
+            position: static;
+            transform: none;
+            padding: (66px - 28px) / 2 0;
+            li{
+                display: inline-block;
+                margin: 0 5px;
+                + li{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
 }

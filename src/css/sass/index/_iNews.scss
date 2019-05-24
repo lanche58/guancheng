@@ -46,6 +46,7 @@
         color: $fc1;
         line-height: 22px;
         font-weight: bold;
+        overflow: hidden;
     }
     .tx{
         height: 22px * 3;
@@ -86,6 +87,9 @@
         padding-left: 20px;
         position: static;
         margin-top: 40px - 3px;
+        @media screen and (max-width:1366px) {
+            margin-top: 30px - 3px;
+        }
         li{
             position: relative;
             width: 16px;
@@ -113,6 +117,31 @@
                 height: 4px;
                 background: $mc2;
                 margin-top: -2px;
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .slick-dots{
+            li{
+                width: 10px;
+                background: $fc2;
+                border-radius: 50%;
+                margin: 0 6px;
+                &:after{
+                    display: none;
+                }
+            }
+            .slick-active{
+                background: $mc2;
+            }
+        }
+    }
+    @media screen and (max-width:481px) {
+        .slick-dots{
+            li{
+                width: 7px;
+                height: 7px;
+                margin: 0 4px;
             }
         }
     }

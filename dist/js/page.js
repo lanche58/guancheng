@@ -74,7 +74,12 @@ $(function () {
         e.preventDefault();
         $('html').stop().animate({scrollTop: w_height - $mtoph}, 600);
     });
-	
+    
+    if ($('.splwo').length !== 0) {
+        $('.splwo').each(function(i) {
+            splitWords($(this));
+        });
+    }
 	
 
 
@@ -151,6 +156,7 @@ $(function () {
         if (windowTop < w_height && !isMobile) {
             $('.pbanner .pic2 img').css('transform', "translate(0px," + (windowTop) / 1.5 + "px)");
             $('.nwBanner .pic2 img').css('transform', "translate(0px," + (windowTop) / 1.5 + "px)");
+            $('.pbanner .pic img').css('transform', "translate(0px," + (windowTop) / 1.5 + "px)");
         }
     });
  
@@ -320,7 +326,10 @@ function splitWords(el) {
         for (var j = 0; j < _test[i].length; j++) {
             _span.eq(i).append('<i></i>');
             var _i = _span.eq(i).find('i');
-            _i.eq(j).text(_test[i][j]).css({
+            if (_test[i][j] === " ") {
+                _test[i][j] = "&nbsp;";
+            }
+            _i.eq(j).html(_test[i][j]).css({
                 'animation-delay': 100*j + 'ms',
                 '-webkit-animation-delay': 100*j + 'ms'
             });
