@@ -177,8 +177,8 @@ a{color:#666}
 }
 .popUpblack{position:fixed;top:0;bottom:0;left:0;right:0;z-index:1020;background:url(../images/black5.png);display:none}
 .popUpblack.show .popUp{-webkit-transform:none;-moz-transform:none;-ms-transform:none;transform:none;opacity:1;visibility:visible;-webkit-transition:.6s;-moz-transition:.6s;transition:.6s}
-.popUp{position:absolute;left:50%;top:50%;margin:-126px 0 0 -115px;width:220px;height:242px;border:5px solid #0079c3;background:#fff;opacity:0;visibility:hidden;-webkit-transform:translateY(20%);-moz-transform:translateY(20%);-ms-transform:translateY(20%);transform:translateY(20%)}
-.popUp .t{padding:0 10px;height:26px;line-height:26px;color:#fff;font-weight:700;background:#0079c3;overflow:hidden}
+.popUp{position:absolute;left:50%;top:50%;margin:-126px 0 0 -115px;width:220px;height:242px;border:5px solid #dab96b;background:#fff;opacity:0;visibility:hidden;-webkit-transform:translateY(20%);-moz-transform:translateY(20%);-ms-transform:translateY(20%);transform:translateY(20%)}
+.popUp .t{padding:0 10px;height:26px;line-height:26px;color:#fff;font-weight:700;background:#dab96b;overflow:hidden}
 .popUp .t .close{float:right;cursor:pointer;color:#fff;font-weight:400}
 .popUp .img{padding:20px}
 .popUp .img img{width:100%;display:block}
