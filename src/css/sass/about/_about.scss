@@ -53,6 +53,7 @@
         font-size: 24px;
         color: $fc1;
         text-align: justify;
+        font-family:STKaiti;
     }
     .pic{
         width: 230px;
@@ -64,17 +65,22 @@
         color: $fc1;
         font-size: 24px;
         line-height: 1.4;
+        font-family:STKaiti;
     }
     .name{
         margin-bottom: 20px;
         color: $fc1;
         font-size: 18px;
+        font-family:Songti SC;
         span{
             font-size: 16px;
         }
         i{
             color: $hc1;
         }
+    }
+    .text{
+        font-family:Songti SC;
     }
     .leader-name{
         margin-top: 20px;
@@ -250,6 +256,7 @@
 .cul-tx{
     font-size: 32px;
     line-height: 1.4;
+    font-family:STKaiti;
     @media screen and (max-width:1366px) {
         font-size: 26px;
     }

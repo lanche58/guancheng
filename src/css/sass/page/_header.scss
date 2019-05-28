@@ -1,17 +1,17 @@
 .header{
-    height: 64px;
+    height: 84px;
     line-height: 24px;
     .logo{
         position: absolute;
-        width: 160px;
-        top: (64px - 46px) / 2;
+        width: 186px;
+        top: (84px - 54px) / 2;
         left: 20px;
     }
     .nav{
         li{
             > a{
                 display: block;
-                padding: (64px - 24px) / 2 (48px / 2);
+                padding: (84px - 24px) / 2 (48px / 2);
                 color: $fc2;
                 &.act{
                     color: $mc2;
@@ -31,7 +31,7 @@
         a{
             float: left;
             font-size: 14px;
-            padding: (64px - 24px) / 2 0;
+            padding: (84px - 24px) / 2 0;
             @media screen and (min-width:1025px) {
                 &:hover{
                     color: $mc2;
@@ -72,6 +72,7 @@
         height: 60px;
         .logo{
             left: 5%;
+            width: 160px;
             top: (60px - 46px) / 2;
         }
         .h-link, .nav{
@@ -157,7 +158,7 @@
 }
 
 .mtop{
-    height: 64px;
+    height: 84px;
     @media screen and (max-width:1024px) {
         height: 60px;
     }

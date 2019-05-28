@@ -1,5 +1,6 @@
 .job-list{
     font-size: 14px;
+    font-family:Songti SC;
     li{
         margin-bottom: 10px;
     }
@@ -29,6 +30,7 @@
         font-size: 24px;
         color: $fc1;
         @include mt3;
+        font-family:Kaiti SC;
     }
     .more{
         float: right;
