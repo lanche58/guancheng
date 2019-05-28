@@ -3213,72 +3213,70 @@
   position: relative;
   overflow: hidden; }
 
-.banner {
-  margin-top: 64px; }
+.banner .pic2 {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.banner .slick-dots {
+  left: auto;
+  right: 16px;
+  bottom: 50%;
+  transform: translateY(50%);
+  bottom: 15%\9;
+  transform: none\9; }
+  .banner .slick-dots li {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 0;
+    background: none; }
+    .banner .slick-dots li:before, .banner .slick-dots li:after {
+      content: "";
+      position: absolute; }
+    .banner .slick-dots li:before {
+      width: 4px;
+      height: 4px;
+      border-radius: 100%;
+      background: #DAB96B;
+      top: 50%;
+      left: 50%;
+      margin: -2px 0 0 -2px; }
+    .banner .slick-dots li:after {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 1px solid #DAB96B;
+      opacity: 0;
+      visibility: hidden;
+      transition: 400ms; }
+    .banner .slick-dots li + li {
+      margin-top: 10px; }
+    @media screen and (min-width: 1025px) {
+      .banner .slick-dots li:hover:after {
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(135deg); } }
+  .banner .slick-dots .slick-active:after {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(135deg); }
+
+@media screen and (max-width: 1024px) {
   .banner .pic2 {
-    position: absolute;
-    top: 0;
-    left: 0; }
+    position: static; }
   .banner .slick-dots {
-    left: auto;
-    right: 16px;
-    bottom: 50%;
-    transform: translateY(50%);
-    bottom: 15%\9;
-    transform: none\9; }
+    background: #fff;
+    position: static;
+    transform: none;
+    padding: 19px 0; }
     .banner .slick-dots li {
-      position: relative;
-      display: block;
-      width: 28px;
-      height: 28px;
-      margin: 0;
-      background: none; }
-      .banner .slick-dots li:before, .banner .slick-dots li:after {
-        content: "";
-        position: absolute; }
-      .banner .slick-dots li:before {
-        width: 4px;
-        height: 4px;
-        border-radius: 100%;
-        background: #DAB96B;
-        top: 50%;
-        left: 50%;
-        margin: -2px 0 0 -2px; }
-      .banner .slick-dots li:after {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        border: 1px solid #DAB96B;
-        opacity: 0;
-        visibility: hidden;
-        transition: 400ms; }
+      display: inline-block;
+      margin: 0 5px; }
       .banner .slick-dots li + li {
-        margin-top: 10px; }
-      @media screen and (min-width: 1025px) {
-        .banner .slick-dots li:hover:after {
-          opacity: 1;
-          visibility: visible;
-          transform: rotate(135deg); } }
-    .banner .slick-dots .slick-active:after {
-      opacity: 1;
-      visibility: visible;
-      transform: rotate(135deg); }
-  @media screen and (max-width: 1024px) {
-    .banner {
-      margin-top: 0; }
-      .banner .pic2 {
-        position: static; }
-      .banner .slick-dots {
-        background: #fff;
-        position: static;
-        transform: none;
-        padding: 19px 0; }
-        .banner .slick-dots li {
-          display: inline-block;
-          margin: 0 5px; }
-          .banner .slick-dots li + li {
-            margin-top: 0; } }
+        margin-top: 0; } }
 
 .row-bg {
   height: 100%;
@@ -3786,9 +3784,6 @@
   transform: translateY(40px);
   opacity: 0;
   visibility: hidden; }
-
-#boxsider .mtop {
-  height: 0 !important; }
 
 .active2 .transY {
   transform: none;

@@ -3,6 +3,7 @@
 <body>
 <div class="content">
     <div index="1" id="s1" class="row rowh active">
+        <div class="mtop"></div> 
         <div class="banner u-slick">
             <div class="item">
                 <div class="pic2"><img src="img/banner.jpg" alt=""></div>
@@ -64,8 +65,8 @@
                 <li class="trans transX">
                     <div class="tb">
                         <div class="tbc">
-                            <p class="num">6<span class="icon iconfont icon-jiahao"></span></p>
-                            <p class="ti">6大教育版块</p>
+                            <p class="num">5<span class="icon iconfont icon-jiahao"></span></p>
+                            <p class="ti">五位一体的教育体系</p>
                         </div>
                     </div>
                 </li>
@@ -270,7 +271,7 @@
                 </li>
                 <li>
                     <a href="edu.html">冠城教育</a>
-                    <a href="edu.html?#edu1" class="edu">教育简介</a>
+                    <a href="edu.html?#edu1" class="edu">教育概况</a>
                     <a href="edu.html?#edu2" class="edu">发展历程</a>
                     <a href="edu.html?#edu3" class="edu">组织架构</a>
                     <a href="edu1.html">文化理念</a>
@@ -290,7 +291,7 @@
                 <li>
                     <a href="sch.html">冠城学院</a>
                     <a href="sch.html">学院简介</a>
-                    <a href="sch1.html">文化传播</a>
+                    <a href="sch1.html">领导讲话</a>
                     <a href="sch3.html">教育视导</a>
                     <a href="sch2.html">专题研修</a>
                     <a href="sch3.html">教育论坛</a>
@@ -342,9 +343,97 @@
         </div>
     </div>
     <div id="boxsider" class="boxsider1">
-        @@include('./header.html',{
-            "index": "act"
-        })
+        <div class="header clearfix">
+            <a href="index.html" class="logo"><img src="images/logo.png"/></a>
+            <ul class="nav fib">
+                <li class="ib"><a href="about.html" @@if (context.about==='act') { class="act" }>冠城集团</a></li>
+                <li class="ib"><a href="edu.html" @@if (context.edu==='act') { class="act" }>冠城教育</a></li>
+                <li class="ib"><a href="branch.html" @@if (context.branch==='act') { class="act" }>旗下院校</a></li>
+                <li class="ib"><a href="sch.html" @@if (context.sch==='act') { class="act" }>冠城学院</a></li>
+                <li class="ib"><a href="news.html" @@if (context.news==='act') { class="act" }>新闻中心</a></li>
+                <li class="ib"><a href="job.html" @@if (context.job==='act') { class="act" }>人才招聘</a></li>
+                <li class="ib"><a href="cta.html" @@if (context.cta==='act') { class="act" }>联系我们</a></li>
+            </ul>
+            <div class="h-link clearfix">
+                <a href="#" class="ff-1 oa">OA</a>
+                <a href="img/ma.jpg" class="icon iconfont icon-erweima weixin"></a>
+            </div>
+            <div class="menu-handler">
+                <span class="burger burger-1 mtrans"></span>
+                <span class="burger burger-2 mtrans"></span>
+                <span class="burger burger-3 mtrans"></span>
+            </div>
+        </div>
+        <!-- header -->
+        <div class="menuBox">
+            <dl class="navMobile">
+                <dd><a href="index.html">首页</a></dd>
+                <dd><a href="about.html">冠城集团</a>
+                    <div class="mtv">
+                        <a href="about.html?#ab1" class="about">集团概况</a>
+                        <a href="about.html?#ab2" class="about">领导风采</a>
+                        <a href="about.html?#ab3" class="about">组织文化</a>
+                        <a href="about.html?#ab4" class="about">企业荣誉</a>
+                    </div>
+                </dd>
+                <dd><a href="edu.html">冠城教育</a>
+                    <div class="mtv">
+                        <a href="edu.html?#edu1" class="edu">教育概况</a>
+                        <a href="edu.html?#edu2" class="edu">发展历程</a>
+                        <a href="edu.html?#edu3" class="edu">组织架构</a>
+                        <a href="edu1.html">文化理念</a>
+                        <a href="edu2.html">发展战略</a>
+                        <a href="edu3.html">核心能力</a>
+                        <a href="edu.html?#edu6" class="edu">荣誉成果</a>
+                    </div>
+                </dd>
+                <dd><a href="branch.html">旗下院校</a>
+                    <div class="mtv">
+                        <a href="branch.html">成都七中实验学校</a>
+                        <a href="branch.html">眉山冠城七中实验学校</a>
+                        <a href="branch.html">成都启文幼儿园</a>
+                        <a href="branch.html">德阳城市轨道交通职业学校</a>
+                        <a href="branch.html">成都蓝港外国语小学</a>
+                        <a href="branch.html">核桃书院</a>
+                    </div>
+                </dd>
+                <dd><a href="sch.html">冠城学院</a>
+                    <div class="mtv">
+                        <a href="sch.html">学院简介</a>
+                        <a href="sch1.html">领导讲话</a>
+                        <a href="sch3.html">教育视导</a>
+                        <a href="sch2.html">专题研修</a>
+                        <a href="sch3.html">教育论坛</a>
+                    </div>
+                </dd>
+                <dd><a href="news.html">新闻中心</a>
+                    <div class="mtv">
+                        <a href="news.html">冠城要闻</a>
+                        <a href="news.html">校园动态</a>
+                        <a href="news.html">社会关注</a>
+                        <a href="news.html">教育资讯</a>
+                        <a href="news.html">通知公告</a>
+                    </div>
+                </dd>
+                <dd><a href="job.html">人才招聘</a>
+                    <div class="mtv">
+                        <a href="job.html">人才理念</a>
+                        <a href="job1.html">招聘职位</a>
+                    </div>
+                </dd>
+                <dd><a href="cta.html">联系我们</a>
+                    <div class="mtv">
+                        <a href="cta.html?#cta1" class="cta">联系方式</a>
+                        <a href="cta.html?#cta2" class="cta">在线留言</a>
+                    </div>
+                </dd>
+            </dl>
+            <div class="ma"><img src="img/1.jpg" alt=""></div>
+            <a href="#" class="oa ff-1">OA登录</a>
+            <br/><br/><br/><br/>
+        </div>
+        <!-- menuBox -->
+        <div class="menuBlack"></div>       
         <div class="ix-dec-en"><div class="tb"><div class="tbc"><img src="images/dec_en.png" alt=""></div></div></div>
         <div class="mouse-scroll-wrap"><a href="javascript:;" class="mouse-scroll"><i class="line"></i><i class="icon iconfont icon-shubiao"></i></a></div>
         <div class="row-controls">

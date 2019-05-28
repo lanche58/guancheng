@@ -139,7 +139,7 @@ $(document).ready(function(){
 		arrows: false,
 		dots: true,
 		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplaySpeed: 8000,
 		// fade: true,
 		pauseOnHover: false
 	});
